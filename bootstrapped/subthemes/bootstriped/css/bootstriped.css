@@ -1,0 +1,430 @@
+body, html {
+  height: 100%;
+  padding-top: 0;
+  position: relative;
+}
+body {
+  background-color: #f0f0f0;
+}
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ffffff;
+}
+.page-content {
+  margin-bottom: 30px;
+}
+.page-content .node ul {
+  /* list-style:none; */
+  margin-left: 0;
+  padding-left: 20px;
+  /* http://stackoverflow.com/questions/710158/why-do-my-list-item-bullets-overlap-floating-elements */
+  overflow: hidden;
+}
+.page-content .content ul li {
+    margin-bottom:15px;
+    margin-top:5px;
+}
+.page-content .content .view ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+.page-content .content .view li{
+  list-style:none; 
+  margin:0;
+}
+
+#wrapper {
+  padding-bottom: 120px; /* Height of the footer */
+  min-height:100%;
+  position:relative;
+}
+
+.navbar-fixed-top {
+  position: relative;
+}
+
+#navbar {
+  margin-bottom: 0;
+  zoom: 1;
+  background-color: #008da8;
+  line-height: 1.1;
+}
+.navbar-inner {
+  background-image: none;
+  background-color: #008da8;
+  background: #008da8;
+  padding-top: 30px;
+  border: 10px solid black;
+  filter: none;
+}
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 20px 20px 20px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+  text-shadow: none;
+  overflow: hidden;
+}
+#site-name a {
+  font-size: 40px;
+  margin-top: -6px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oxygen', sans-serif;
+
+}
+.main-container {
+  padding: 20px 0 100px 0;
+}
+.page-header {
+padding-bottom: 9px;
+margin: 0 0 20px;
+border-bottom: 1px solid #eeeeee;
+}
+.navbar .nav li a {
+  float: none;
+  padding: 20px 15px 20px 15px;
+  color: #444;
+  color: #fafafa;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #216477;
+  text-shadow: none;
+}
+.front .navbar .nav li a {
+  color: white;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+border-bottom: 1px solid #216477;
+}
+.navbar .nav {
+  float: right;
+  margin-right:;
+}
+
+h1 {
+  font-size:24px;
+}
+h2, h3 {
+  font-size: 21px;
+  background-repeat: n
+}
+h1, h2, h3, h4, h5, h6 {
+font-weight: normal;
+}
+.breadcrumb {
+list-style: none;
+background-color: #333;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.breadcrumb > li {
+text-shadow: none;
+}
+.breadcrumb > li a {
+ color: #aaa;
+}
+#page-header {
+  display:none;
+  background-color: #ddd;
+  border-bottom: 1px solid #ccc;
+}
+/* home page */
+body.front {
+  /*
+  background-image: url(images/front_banner.jpg);
+  background: #0b0b0b url('/sites/all/themes/custom/bootstrapped/subthemes/bootstriped/images/silhouette_bw_sm.jpg') no-repeat top center;
+  
+  background: #0b0b0b url('http://lt-dev.falmouth.ac.uk/library/sites/all/themes/custom/bootstrapped/subthemes/bootstriped/images/silhouette_bw_xsm.jpg') no-repeat top center;
+  */
+}
+.button-menu {
+  list-style: none;
+  list-style-image: none;
+}
+body.front #page-header {
+  display: block;
+}
+.front .navbar-fixed-top {
+  /* opacity:0.9;*/
+}
+@media (max-width: 767px) { 
+  body.front {
+    background-position: -50px 0;
+  }
+}
+
+.front #block-block-7 {margin-top:30px;}
+.front #page-header{
+  /* 
+  background: #0b0b0b url('http://lt-dev.falmouth.ac.uk/library/sites/all/themes/custom/bootstrapped/subthemes/bootstriped/images/silhouette_bw_slice.jpg') no-repeat top center;
+ 
+  min-height:260px; */
+}
+.front #page-header .block {
+  /*
+  text-align: right;
+  clear: both;
+  position:relative;
+  float:right;
+  */
+  /* border-radius: 5px; */
+}
+
+.front #main-region {
+  background-color: #fafafa;
+}
+
+.block.collapsible h2 {
+  cursor: pointer;
+}
+.homebox {
+  clear:left;
+  margin-bottom:20px;
+  color: white;
+  font-weight: 200;
+  -moz-box-shadow: 0px 0 5px #888;
+  -webkit-box-shadow: 0px 2px 5px #888;
+  box-shadow: 0px 1px 5px #bbb;
+}
+.homebox .content {
+  border: 1px solid #999;
+  border-radius: 4px;
+
+}
+
+.homebox .content {
+  padding: 20px;
+  padding-top: 0;
+}
+.homebox a { color: white; }
+.homebox .block-title {
+  font-weight: 200;
+  text-align: center
+}
+.homebox .views-field {
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: #444;
+  margin-top: 0;
+  padding: 35px 0 36px;
+  border-top: 1px solid #E5E5E5;
+     position:absolute;
+   width:100%;
+   height:120px;   /* Height of the footer */
+}
+/* end of home page */
+/* subject area pages */
+#block-views-subject-librarian-profile-block{
+  /*display: inline-block;
+  float:left;*/
+}
+.view-subject-term {
+  position: relative;
+}
+.view-subject-term button{
+  position: absolute;
+  top: 0;
+  right:0;
+}
+.view-subject-term .view-content {
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+#block-views-subject-librarian-profile-block .content {
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 980px) {
+  .view-mode-full .field-name-field-image,
+  .view-mode-lightbox .field-name-field-image {
+    float:left;
+  }
+}
+.view-mode-thumb_teaser {
+  margin-bottom:10px;
+}
+.view-mode-full .field-name-field-image,
+.field-name-field-image,
+.view-mode-lightbox .field-name-field-image,
+.field-name-field-profile-picture {
+  margin: 0 20px 20px 0;
+}
+/* stop text wedge around views at larger screen sizes (relies on context class)*/
+.related .node-page {
+  clear:both;
+}
+.node-page table tr td {
+  padding-right:20px;
+}
+table.views-view-grid td {
+  border: 0;
+  padding:0;
+}
+
+h3.offset-top {
+  margin-top: -10px;
+}
+
+/* admin interface */
+.nav {
+  margin-bottom: 10px;
+}
+#admin-menu-search {
+  display:none;
+}
+.drag-previous {
+  background-color: #d4f1bc;
+}
+.book-helper-sync-processed{
+  display:none;
+}
+.my-workbench {
+  margin-left: -20px;
+}
+div.admin {
+padding-top: 0;
+}
+.tabledrag-toggle-weight-wrapper,
+.field-type-image thead,
+.control-group.form-item-field-image-und-0-title {
+  display:none;
+}
+.control-group.form-type-managed-file{
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+.form-type-managed-file .form-file {
+  line-height: 0;
+}
+.form-type-managed-file .help-block {
+  font-size: .8em;
+}
+#block-views-critical-comments-block-1, .greyed-out {
+  opacity: 0.2;
+}
+#block-views-critical-comments-block-1:hover, .greyed-out:hover {
+  opacity: 1;
+}
+#admin-hide:hover, #admin-show:hover {
+  cursor: pointer;
+}
+.ds-2col-stacked input {
+  width: 95%;
+}
+#page-node-form .fieldset-legend {
+  text-align: right;
+}
+#edit-body-und-0-format-help, .filter-guidelines {
+  display:none;
+}
+/* end admin interface */
+
+
+.green-gradient .content {
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#a9db83', endColorstr = '#80ae51')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #a9db83, #80ae51);
+background-image: -ms-linear-gradient(top, #a9db83, #80ae51);
+background-image: -o-linear-gradient(top, #a9db83, #80ae51);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#a9db83), to(#80ae51));
+background-image: -webkit-linear-gradient(top, #a9db83, #80ae51);
+background-image: linear-gradient(top, #a9db83, #80ae51);
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+.orange-gradient .content{
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff4f95', endColorstr = '#ff1f4e');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff4f95', endColorstr = '#ff1f4e')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ff4f95, #ff1f4e);
+background-image: -ms-linear-gradient(top, #ff4f95, #ff1f4e);
+background-image: -o-linear-gradient(top, #ff4f95, #ff1f4e);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ff4f95), to(#ff1f4e));
+background-image: -webkit-linear-gradient(top, #ff4f95, #ff1f4e);
+background-image: linear-gradient(top, #ff4f95, #ff1f4e);
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+
+.blue-gradient .content {
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#75a3e5', endColorstr = '#4a7cc7');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#75a3e5', endColorstr = '#4a7cc7')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #75a3e5, #4a7cc7);
+background-image: -ms-linear-gradient(top, #75a3e5, #4a7cc7);
+background-image: -o-linear-gradient(top, #75a3e5, #4a7cc7);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#75a3e5), to(#4a7cc7));
+background-image: -webkit-linear-gradient(top, #75a3e5, #4a7cc7);
+background-image: linear-gradient(top, #75a3e5, #4a7cc7);
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+.black-gradient .content {
+background: rgb(63,63,63); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(63,63,63,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,63,63,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(63,63,63,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(63,63,63,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(63,63,63,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(63,63,63,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.btn-pink {
+  background-color: hsl(346, 90%, 32%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f21649", endColorstr="#9b082a");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f21649), to(#9b082a));
+  background-image: -moz-linear-gradient(top, #f21649, #9b082a);
+  background-image: -ms-linear-gradient(top, #f21649, #9b082a);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f21649), color-stop(100%, #9b082a));
+  background-image: -webkit-linear-gradient(top, #f21649, #9b082a);
+  background-image: -o-linear-gradient(top, #f21649, #9b082a);
+  background-image: linear-gradient(#f21649, #9b082a);
+  border-color: #9b082a #9b082a hsl(346, 90%, 27%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+.ui-accordion-content .views-row {
+  margin-bottom: 1em;
+}
+.ui-accordion-content a {
+color: #0088cc;
+}
+.ui-widget-content {
+  background: inherit;
+}

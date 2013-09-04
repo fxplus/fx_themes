@@ -1,0 +1,151 @@
+/*
+example media query
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #block-system-main-menu { display: none;}    
+  .front #block-system-main-menu { display: block;}
+}
+​*/
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+}
+
+html, body {
+  width:100%;
+  height:100%;
+}
+body {
+background-color: #fafafa;
+padding-top: 110px;
+}
+#navbar {
+  /* blue line
+  border: 1px solid #3abfc0;
+  border: 1px solid #8AE0E0;
+  border-width: 0 0 10px 0;
+  */
+
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+  
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* minimise title of book navigation */
+#block-menu-block-1 h2 {
+  font-size: 24px;
+}
+/* give images some space */
+.field-type-image {
+  margin-bottom: 20px;
+}
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+/* sort out drupal menu indentation */
+ul.menu li li a,
+.region-sidebar-second i {
+  color: #0088cc;
+  color: #777;
+}
+ul.menu li a.active,
+li.active i {
+  color: #222;
+}
+ul.menu li li li {
+  margin-left: 14px;
+}
+/* icons (font awesome) */
+.region-sidebar-second i, .region-sidebar-first i {
+  float:left;
+  display:inline;
+  margin-top:3px;
+}
+ul.links.inline li {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* nice big link to the catalog */
+.catalog-link {
+  float: right;
+  clear: none;
+  margin-bottom: 10px;
+}
+#block-menu-menu-home-actions ul.menu a {
+  float: right;
+  clear: both;
+  margin-bottom: 20px;
+}
+/* throbber still visible */
+html.js input.form-autocomplete {
+background-position: 99% 8px;
+}
+/* collapsed fieldsets overlapping */
+html.js fieldset.collapsed {
+height: 3em;
+}
+
+ul.links.inline {
+  float: right;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+a.lexicon-term {
+border-bottom: 1px dotted #ddd;
+border-bottom: none;
+color: #0088cc;
+color: #3299b7;
+color: #1d6a7f;
+}
+
+.views-view-grid.cols-2 {
+  width:100%;
+}
+.views-view-grid.cols-2 .col-1,
+.views-view-grid.cols-2 .col-2 {
+  width:48%;
+}
+
+.word-link {
+background-image: none;
+padding: 0;
+color:#016192;
+}
+/* resource views have inline titles, hence no h tags */
+.resource-title {
+  font-size: 1.2em;
+}
+
+input.search-query {
+
+}
+
+/* custom coloured buttons - http://charliepark.org/bootstrap_buttons */
+/* orange */  
+.btn-call {
+  background-color: hsl(14, 100%, 30%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff3b00", endColorstr="#992300");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ff3b00), to(#992300));
+  background-image: -moz-linear-gradient(top, #ff3b00, #992300);
+  background-image: -ms-linear-gradient(top, #ff3b00, #992300);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3b00), color-stop(100%, #992300));
+  background-image: -webkit-linear-gradient(top, #ff3b00, #992300);
+  background-image: -o-linear-gradient(top, #ff3b00, #992300);
+  background-image: linear-gradient(#ff3b00, #992300);
+  border-color: #992300 #992300 hsl(14, 100%, 25%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+.ui-widget {
+  font-family: inherit;
+  font-size: inherit;
+}
+

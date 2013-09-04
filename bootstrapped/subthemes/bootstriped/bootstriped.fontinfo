@@ -1,0 +1,5 @@
+name = 'Google Font Demonstration - Droid/opensans'
+google_families[] = 'Open Sans'
+google_families[] = 'Droid Serif'
+google_families[] = 'Oxygen:700'
+render_css[] = 'render_stylesheet.css'
