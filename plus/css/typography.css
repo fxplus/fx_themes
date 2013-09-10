@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'stag-medium';
+  src: url('../fonts/stag/Stag-Medium.otf');
+}
+@font-face {
+  font-family: 'stag-book';
+  src: url('../fonts/stag/Stag-Book.otf');
+}
+@font-face {
+  font-family: 'stag-light';
+  src: url('../fonts/stag/Stag-Light.otf');
+}
+
+
+#site-name a {
+	font-family: "stag-book";
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 1.5px;
+}
+
+body {
+	font-family: Roboto;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+
+p {
+	margin-bottom: 24px;
+	font-family: Roboto;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: rgba(38,38,38,1);
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+blockquote {
+	font-family: source-sans-pro;
+	padding-left: 2em;
+	border-left: solid #bbb;
+	line-height: 24px;
+	margin-bottom: 24px;
+	padding: 12px 2em;
+	background: #f0f0f0;
+	margin-top: 1px;
+	font-style: italic;
+	font-weight: 400;
+}
+
+
+h1 {
+	font-family: "stag-book";
+	line-height: 48px;
+	font-size: 36px;
+	margin-top: 9px;
+	margin-bottom: 16px;
+	letter-spacing: -1px;
+	color: rgba(137,137,137,1);
+	/* font-style: italic; 
+	font-weight: 700;*/
+}
+
+
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+	font-family: "stag-light";
+	color: rgba(137,137,137,1);
+	letter-spacing: 0px;
+	margin-top: 0px;
+	margin-bottom: 16px;
+	/* font-style: italic;
+	font-weight: 700; */
+}
+
+
+h3, h4 {
+	font-style: italic;
+	font-weight: 700;
+	font-family: "stag-medium";
+	font-size: 21px;
+	line-height: 30px;
+	color: rgba(137,137,137,1);
+	margin-bottom: 16px;
+}
+
+
+h5 {
+	font-style: normal;
+	font-weight: 500;
+	font-family: "AvenirNextRoundedW01-Md 1075562";
+	font-size: 14px;
+	margin-bottom: 24px;
+	line-height: 24px;
+}
+.block-menu-block ul.menu {
+	margin-left: none;
+}
+
+
+#content-body .field-name-body li {
+	font-family: "stag-medium";
+	font-size: 21px;
+	line-height: 30px;
+	color: rgba(137,137,137,1);
+	margin-bottom: 16px;
+}
+
+

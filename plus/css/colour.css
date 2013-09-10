@@ -1,0 +1,90 @@
+/* THEME OPTIONS ************************** */
+
+/* GLOBAL ********************************* */
+/* ----- Body ------------------------ */
+/* ----- Custom Fonts ---------------- */
+/* ----- Text ------------------------ */
+/* ----- Links ----------------------- */
+/* ----- Lists ----------------------- */
+/* ----- Tables ---------------------- */
+/* ----- Forms ----------------------- */
+
+/* HEADER ********************************* */
+/* ----- Header Region --------------- */
+@media (min-width: 768px) {
+  #header {
+    background-color: #004855;
+  }
+  #main-menu {
+    background-color: #008da8;
+  }
+  #main-menu .navbar .nav>li>a {
+    color: #eee;
+  }
+  #main-menu .navbar .nav>.active>a {
+    color: #fff;
+  }
+}
+/* ----- Search Box ------------------ */
+/* ----- Logo ------------------------ */
+/* ----- Site Title and Slogan ------- */
+@media (min-width: 768px) {
+  .site-name a { color: #fefefe;}
+}
+@media (max-width: 767px) {
+  .site-name a { color: #008da8;}
+}
+
+/* NAVIGATION ***************************** */
+/* ----- Main Navigation ------------- */
+/* ----- Secondary Navigation -------- */
+/* ----- Breadcrumbs ----------------- */
+/* ----- First Sidebar Menu Blocks --- */
+/* ----- Second Sidebar Menu Blocks -- */
+/* ----- Admin Menu ------------------ */
+/* ----- Pager Nav ------------------- */
+
+/* SIDEBARS ******************************* */
+
+/* FOOTER ********************************* */
+.site-footer {
+  background: #004855 url('../images/wave.png') repeat-x scroll bottom center; 
+}
+.site-footer .container {
+  background: #004855 url('../images/logos.png') no-repeat scroll top right; 
+}
+/* ----- Fat Footer ------------------ */
+/* CONTENT ******************************** */
+
+/* VIEWS ********************************** */
+/* ----- Search Results -------------- */
+
+/* CONTAINERS ***************************** */
+/* ----- Blocks ---------------------- */
+/* ----- Wells ----------------------- */
+/* ----- Callouts and Blockquotes ---- */
+/* ----- Pullquote Text -------------- */
+
+/* POSTCARD LAYOUTS ********************** */
+
+/* IMAGES ******************************** */
+
+/* ICONS ********************************* */
+
+/* HELPER CLASSES ************************ */
+/* ----- Style ----------------------- */
+/* ----- Positioning ----------------- */
+/* ----- Sizing ---------------------- */
+
+/* GENERAL OVERRIDES ********************* */
+/* ----- Bootstrap Overrides --------- */
+/* ----- Field Collection Overrides -- */
+/* ----- Field Label Overrides ------- */
+
+/* ADMINISTRATION ************************ */
+/* ----- Admin ----------------------- */
+/* ----- User Block ------------------ */
+
+/* MEDIA QUERIES ************************* */
+/* ----- Responsive ------------------ */
+/* ----- Print ----------------------- */
