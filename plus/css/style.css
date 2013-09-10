@@ -67,16 +67,23 @@ ul li.leaf {
   list-style-image: none;
   list-style-type: disc;
 }
-#footer ul.menu li.leaf {
-  list-style-image: none;
-  list-style-type: none;
-}
+
 /* FOOTER ********************************* */
 .site-footer {
   margin-bottom:0;
   padding-top: 24px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   min-height: 100px;
+}
+.site-footer .container {
+  background: transparent url('../images/logos.png') no-repeat scroll top right; 
+}
+#footer ul.menu li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
+#footer ul.menu li a {
+  color: #ddd;
 }
 /* ----- Fat Footer ------------------ */
 
