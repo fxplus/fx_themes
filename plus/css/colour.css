@@ -15,8 +15,9 @@
   #header {
     background-color: #004855;
   }
-  #main-menu {
+  #main-menu, #main-menu .container {
     background-color: #008da8;
+    background-image: none;
   }
   #main-menu .navbar .nav>li>a {
     color: #eee;

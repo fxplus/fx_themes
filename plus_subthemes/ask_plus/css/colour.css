@@ -1,9 +1,4 @@
 /* THEME OPTIONS ************************** */
-body.front #block-menu-menu-new-students {
-  margin-top:-36px;
-  padding: 12px 16px 16px 16px;
-}
-
 
 /* GLOBAL ********************************* */
 /* ----- Body ------------------------ */
@@ -16,103 +11,56 @@ body.front #block-menu-menu-new-students {
 
 /* HEADER ********************************* */
 /* ----- Header Region --------------- */
-#admin-shortcuts li {
-  float: right;
+@media (min-width: 768px) {
+  #header {
+    background-color: #004855;
+  }
+  #main-menu {
+    background-color: #95a725;
+    background-color: #96a540;
+  }
+  #main-menu .navbar .nav>li>a {
+    color: #eee;
+  }
+  #main-menu .navbar .nav>.active>a {
+    color: #fff;
+  }
 }
+
+
 /* ----- Search Box ------------------ */
 /* ----- Logo ------------------------ */
 /* ----- Site Title and Slogan ------- */
+@media (min-width: 768px) {
+  .site-name a { color: #fefefe;}
+}
+@media (max-width: 767px) {
+  .site-name a { color: #008da8;}
+}
 
 /* NAVIGATION ***************************** */
 /* ----- Main Navigation ------------- */
-#content, #sidebar-first, #sidebar-second {
-  margin-top: 32px;
-}
 /* ----- Secondary Navigation -------- */
 /* ----- Breadcrumbs ----------------- */
 /* ----- First Sidebar Menu Blocks --- */
-body.front #block-menu-menu-new-students {
-  background-color: #efefef;
-}
 /* ----- Second Sidebar Menu Blocks -- */
 /* ----- Admin Menu ------------------ */
 /* ----- Pager Nav ------------------- */
 
 /* SIDEBARS ******************************* */
-/*
-.sidebar .nav {
-margin-left: 0;
-}
-#sidebar-first ul.menu li,
-#footer ul.menu li.leaf {
-  list-style-image: none;
-  list-style-type: none;
-}
-#sidebar-first ul.menu li ul li.leaf {
-  list-style-image: none;
-  list-style-type: disc;
-}
-#sidebar-first ul.menu li ul li.collapsed {
-  list-style-image: url("../../misc/menu-leaf.png");
-  list-style-type: none;
-}
-#sidebar-first ul.menu li {
-margin: 0;
-}
-#sidebar-first ul.menu li {
-margin: 0.5em;
-}
-*/
-ul li.leaf {
-  list-style-image: none;
-  list-style-type: disc;
-}
 
 /* FOOTER ********************************* */
 .site-footer {
-  margin-bottom:0;
-  padding-top: 24px;
-  padding-bottom: 40px;
-  min-height: 100px;
-}
-.site-footer .container {
-  background: transparent url('../images/logos.png') no-repeat scroll top right; 
-}
-#footer ul.menu li.leaf {
-  list-style-image: none;
-  list-style-type: none;
-}
-#footer ul.menu li a {
-  color: #ddd;
-  background-color: transparent;
-}
-#footer ul li a:hover {
- color: #fff;
+  background: #004855 url('../images/wave.png') repeat-x scroll bottom center; 
 }
 /* ----- Fat Footer ------------------ */
-
 /* CONTENT ******************************** */
-body.front #focus .menu.nav {
-  margin:0;
-}
-@media (min-width: 768px) {
-  body.front #focus {
-    background: #fff url('../images/the_hills_clouds_fade50.png') repeat-x scroll top center; 
-  }
-}
-
 
 /* VIEWS ********************************** */
 /* ----- Search Results -------------- */
 
 /* CONTAINERS ***************************** */
 /* ----- Blocks ---------------------- */
-#block-menu-menu-home-actions {
-  margin-top: -12px;
-}
-#block-menu-menu-home-actions .btn {
- margin-bottom: 12px;
-}
 /* ----- Wells ----------------------- */
 /* ----- Callouts and Blockquotes ---- */
 /* ----- Pullquote Text -------------- */
