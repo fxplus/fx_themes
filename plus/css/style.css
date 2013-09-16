@@ -92,23 +92,38 @@ ul li.leaf {
 /* ----- Fat Footer ------------------ */
 
 /* CONTENT ******************************** */
+body.front #content-head {
+  display:none;
+}
+body.front .view-news-feed h4 {
+  margin-top: -10px;
+}
 body.front #focus .menu.nav {
   margin:0;
 }
-@media (min-width: 768px) {
+body.front #focus {
+  /* background: #fff url('../images/the_hills_clouds_fade50.png') repeat-x scroll top center; */
+  min-height: 215px;
+  background-color: #d7eefc;
+}
+@media (max-width: 767px) {
   body.front #focus {
-    background: #fff url('../images/the_hills_clouds_fade50.png') repeat-x scroll top center; 
+    background: transparent;
+    min-height: 0;
   }
 }
-
+body.front #content-upper .slide-description {
+  text-align: right;
+  padding-right: 24px;
+}
 
 /* VIEWS ********************************** */
 /* ----- Search Results -------------- */
 
 /* CONTAINERS ***************************** */
 /* ----- Blocks ---------------------- */
-#block-menu-menu-home-actions {
-  margin-top: -12px;
+body.front #focus div #block-menu-menu-home-actions {
+  margin-top:   24px;
 }
 #block-menu-menu-home-actions .btn {
  margin-bottom: 12px;

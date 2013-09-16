@@ -35,11 +35,9 @@
   }
   .navbar { margin-bottom: 0; }
     #main-menu { margin: 0 0 0 -20px; }
-
-  body.front #focus {
-    padding-top:32px;
+  body.front #focus div.block {
+    margin-top:32px;
   }
-
 }
 /* ----- Secondary Navigation -------- */
 /* ----- Breadcrumbs ----------------- */

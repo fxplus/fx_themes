@@ -24,8 +24,10 @@ function plus_process_page(&$variables) {
       $variables['title'] = NULL;
     } 
   }
-  global $user;
-
+  if (arg(0) == 'resources' && arg(1) == 'list') {
+    drupal_add_js(drupal_get_path('theme', 'plus') .'/js/resource-list-info.js');
+  }
+  //global $user;
   //drupal_set_message($_SESSION['institution']);
   //watchdog('bootstrapped', $user->uid.':'. $_SESSION['institution']);
   //$variables['catalog_link'] = l('Search Catalogue', 'http://voyager.falmouth.ac.uk/', _get_button_attributes());
@@ -66,7 +68,7 @@ function _get_button_attributes($menu_link = FALSE) {
       switch($menu_link['menu_name']) {
         case('menu-home-actions'):
           //$class = array('class' => array('btn', 'btn-call', 'btn-large', 'span3'));
-          $menuclass = array('btn', 'btn-large', 'span9', 'pull-right');
+          $menuclass = array('btn', 'btn-large', 'span12', 'pull-right');
           break;
         default:
           $menuclass = array();

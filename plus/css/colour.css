@@ -11,21 +11,36 @@
 
 /* HEADER ********************************* */
 /* ----- Header Region --------------- */
-@media (min-width: 768px) {
+#header {
+  background-color: #004855;
+}
+#main-menu, #main-menu .container {
+  background-color: #008da8;
+  background-image: none;
+}
+#main-menu .navbar .nav>li>a {
+  color: #eee;
+}
+#main-menu .navbar .nav>.active>a {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
   #header {
-    background-color: #004855;
+    background-color: transparent;
   }
   #main-menu, #main-menu .container {
-    background-color: #008da8;
-    background-image: none;
+    background-color: transparent;
   }
   #main-menu .navbar .nav>li>a {
-    color: #eee;
+    color: #666;
   }
   #main-menu .navbar .nav>.active>a {
-    color: #fff;
+    color: #444;
   }
 }
+
+
 /* ----- Search Box ------------------ */
 /* ----- Logo ------------------------ */
 /* ----- Site Title and Slogan ------- */

@@ -78,7 +78,7 @@
 </div>
 <!-- /#main-menu -->
 <?php endif; ?>
-<div id="focus" class="clearfix main" role="main">
+<div id="focus" class="clearfix" role="main">
   <div class="container">
     <?php if ($page['main_top']): ?>
     <div id="main-top" class="row-fluid main-top"> <?php print render($page['main_top']); ?> </div>
