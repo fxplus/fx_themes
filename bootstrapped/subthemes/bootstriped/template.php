@@ -25,7 +25,7 @@ function bootstriped_preprocess_page(&$variables) {
     drupal_add_js(drupal_get_path('theme', 'bootstriped') .'/js/bootstriped-info.js');
   }
   drupal_add_js(drupal_get_path('theme', 'bootstriped') .'/bootstriped.js');
-  global $user;
+  //global $user;
   //drupal_set_message($_SESSION['institution']);
   //watchdog('bootstriped', $user->uid.':'. $_SESSION['institution']);
   $variables['catalog_link'] = l('Search Catalogue', 'http://voyager.falmouth.ac.uk/', _get_button_attributes());

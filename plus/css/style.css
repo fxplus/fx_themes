@@ -95,8 +95,8 @@ ul li.leaf {
 body.front #content-head {
   display:none;
 }
-body.front .view-news-feed h4 {
-  margin-top: -10px;
+body.front .view-news-feed.view-display-id-page {
+  margin-top: -60px;
 }
 body.front #focus .menu.nav {
   margin:0;
@@ -117,7 +117,21 @@ body.front #content-upper .slide-description {
   padding-right: 24px;
 }
 
+.content .pull-left span.autofloat-odd,
+#content .pull-left span.autofloat-odd {
+  float: left;
+  margin: 0;
+}
+.content .pull-left,
+.content .pull-left {
+ clear: left;
+}
+
 /* VIEWS ********************************** */
+/* ----- views accordion -------------- */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background-image:none;
+}
 /* ----- Search Results -------------- */
 
 /* CONTAINERS ***************************** */

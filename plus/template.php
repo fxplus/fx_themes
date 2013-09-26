@@ -68,7 +68,7 @@ function _get_button_attributes($menu_link = FALSE) {
       switch($menu_link['menu_name']) {
         case('menu-home-actions'):
           //$class = array('class' => array('btn', 'btn-call', 'btn-large', 'span3'));
-          $menuclass = array('btn', 'btn-large', 'span12', 'pull-right');
+          $menuclass = array('btn', 'btn-large', 'span9', 'pull-right');
           break;
         default:
           $menuclass = array();
