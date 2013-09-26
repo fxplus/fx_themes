@@ -1,4 +1,4 @@
-name = ASK Plus
+name = Library Plus
 base theme = plus
 description = Based on Tableless, multi-column subtheme provided by <a href="http://webservices.stanford.edu">Stanford Web Services</a> as a subtheme of the <a href="http://openframework.stanford.edu">Open Framework theme</a>.
 core = 7.x

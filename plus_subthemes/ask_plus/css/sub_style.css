@@ -1,9 +1,4 @@
 /* THEME OPTIONS ************************** */
-body.front #block-menu-menu-new-students {
-  margin-top:-36px;
-  padding: 12px 16px 16px 16px;
-}
-
 
 /* GLOBAL ********************************* */
 /* ----- Body ------------------------ */
@@ -16,121 +11,33 @@ body.front #block-menu-menu-new-students {
 
 /* HEADER ********************************* */
 /* ----- Header Region --------------- */
-#admin-shortcuts li {
-  float: right;
-}
+
 /* ----- Search Box ------------------ */
 /* ----- Logo ------------------------ */
 /* ----- Site Title and Slogan ------- */
 
 /* NAVIGATION ***************************** */
 /* ----- Main Navigation ------------- */
-#content, #sidebar-first, #sidebar-second {
-  margin-top: 32px;
-}
 /* ----- Secondary Navigation -------- */
 /* ----- Breadcrumbs ----------------- */
 /* ----- First Sidebar Menu Blocks --- */
-body.front #block-menu-menu-new-students {
-  background-color: #efefef;
-}
 /* ----- Second Sidebar Menu Blocks -- */
 /* ----- Admin Menu ------------------ */
 /* ----- Pager Nav ------------------- */
 
 /* SIDEBARS ******************************* */
-/*
-.sidebar .nav {
-margin-left: 0;
-}
-#sidebar-first ul.menu li,
-#footer ul.menu li.leaf {
-  list-style-image: none;
-  list-style-type: none;
-}
-#sidebar-first ul.menu li ul li.leaf {
-  list-style-image: none;
-  list-style-type: disc;
-}
-#sidebar-first ul.menu li ul li.collapsed {
-  list-style-image: url("../../misc/menu-leaf.png");
-  list-style-type: none;
-}
-#sidebar-first ul.menu li {
-margin: 0;
-}
-#sidebar-first ul.menu li {
-margin: 0.5em;
-}
-*/
-ul li.leaf {
-  list-style-image: none;
-  list-style-type: disc;
-}
 
 /* FOOTER ********************************* */
-.site-footer {
-  margin-bottom:0;
-  padding-top: 24px;
-  padding-bottom: 40px;
-  min-height: 100px;
-}
-.site-footer .container {
-  background: transparent url('../images/logos.png') no-repeat scroll top right; 
-}
-#footer ul.menu li.leaf {
-  list-style-image: none;
-  list-style-type: none;
-}
-#footer ul.menu li a {
-  color: #ddd;
-  background-color: transparent;
-}
-#footer ul li a:hover {
- color: #fff;
-}
+
 /* ----- Fat Footer ------------------ */
 
 /* CONTENT ******************************** */
-body.front #content-head {
-  display:none;
-}
-body.front #focus .menu.nav {
-  margin:0;
-}
-body.front #focus {
-  /* background: #fff url('../images/the_hills_clouds_fade50.png') repeat-x scroll top center; */
-  min-height: 215px;
-  background-color: #d7eefc;
-}
-@media (max-width: 767px) {
-  body.front #focus {
-    background: transparent;
-    min-height: 0;
-  }
-}
-.content .pull-left span.autofloat-odd,
-#content .pull-left span.autofloat-odd {
-  float: left;
-  margin: 0;
-}
-.content .pull-left,
-.content .pull-left {
- clear: left;
-}
-
 /* VIEWS ********************************** */
-
+/* ----- views accordion -------------- */
 /* ----- Search Results -------------- */
 
 /* CONTAINERS ***************************** */
 /* ----- Blocks ---------------------- */
-body.front #focus div #block-menu-menu-home-actions {
-  margin-top:   24px;
-}
-#block-menu-menu-home-actions .btn {
- margin-bottom: 12px;
-}
 /* ----- Wells ----------------------- */
 /* ----- Callouts and Blockquotes ---- */
 /* ----- Pullquote Text -------------- */

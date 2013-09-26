@@ -10,7 +10,7 @@ stylesheets[all][] = css/colour.css
 stylesheets[all][] = css/typography.css
 stylesheets[all][] = css/bootstrap_override.css
 stylesheets[all][] = css/of_override.css
-scripts[] = js/script.js
+; scripts[] = js/script.js
 scripts[] = js/css3-mediaqueries.js
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
