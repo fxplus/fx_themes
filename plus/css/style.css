@@ -92,9 +92,6 @@ ul li.leaf {
 /* ----- Fat Footer ------------------ */
 
 /* CONTENT ******************************** */
-body.front #content-head {
-  display:none;
-}
 body.front #focus .menu.nav {
   margin:0;
 }

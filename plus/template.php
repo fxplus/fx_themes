@@ -11,7 +11,13 @@ function plus_process_page(&$variables) {
     } 
   }
 }
-
+function plus_preprocess_search_result(&$variables) {
+  // use long (full) version of page title if available
+  if (isset($variables['result']['node']->field_longtitle)) {
+    $longtitle = ($variables['result']['node']->field_longtitle['und'][0]['value']);
+    $variables['title'] = $longtitle;
+  }
+}
 
 // process_page code for institutional cookie debug
 // global $user;
