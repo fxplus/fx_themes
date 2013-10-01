@@ -106,6 +106,7 @@ body.front #focus {
     min-height: 0;
   }
 }
+/*
 .content .pull-left span.autofloat-odd,
 #content .pull-left span.autofloat-odd {
   float: left;
@@ -115,7 +116,18 @@ body.front #focus {
 .content .pull-left {
  clear: left;
 }
-
+#content span.autofloat-odd {
+  margin: 0 0 12px 18px;
+}
+*/
+#content img {
+  float:right;
+  margin: 0 0 12px 18px;
+}
+#content .pull-left img {
+  float:left;
+  margin: 0;
+}
 /* VIEWS ********************************** */
 
 /* ----- Search Results -------------- */
