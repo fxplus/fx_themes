@@ -1,0 +1,113 @@
+/* THEME OPTIONS ************************** */
+
+/* GLOBAL ********************************* */
+/* ----- Body ------------------------ */
+/* ----- Custom Fonts ---------------- */
+/* ----- Text ------------------------ */
+/* ----- Links ----------------------- */
+/* ----- Lists ----------------------- */
+/* ----- Tables ---------------------- */
+/* ----- Forms ----------------------- */
+
+/* HEADER ********************************* */
+/* ----- Header Region --------------- */
+#header {
+  background-color: #004855;
+}
+#main-menu, 
+#main-menu .container {
+
+  background-color: #f7a600;
+    background-color: #df9a0c;
+}
+#main-menu .navbar-inner {
+  padding-left:0;
+  padding-right:0;
+}
+#main-menu .navbar .nav>li>a {
+  color: #eee;
+  font-weight: 700;
+  text-shadow: 0 0 6px #805805;
+}
+#main-menu .navbar .nav>.active>a {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  #header {
+    background-color: transparent;
+  }
+  #main-menu, #main-menu .container {
+    background-color: transparent;
+  }
+  #main-menu .navbar .nav>li>a {
+    color: #666;
+    font-weight: normal;
+    text-shadow: none;
+  }
+  #main-menu .navbar .nav>.active>a {
+    color: #444;
+  }
+}
+
+
+
+
+/* ----- Search Box ------------------ */
+/* ----- Logo ------------------------ */
+/* ----- Site Title and Slogan ------- */
+.site-name a { color: #fefefe;}
+@media (max-width: 767px) {
+  .site-name a { color: #008da8;}
+}
+
+/* NAVIGATION ***************************** */
+/* ----- Main Navigation ------------- */
+/* ----- Secondary Navigation -------- */
+/* ----- Breadcrumbs ----------------- */
+/* ----- First Sidebar Menu Blocks --- */
+/* ----- Second Sidebar Menu Blocks -- */
+/* ----- Admin Menu ------------------ */
+/* ----- Pager Nav ------------------- */
+
+/* SIDEBARS ******************************* */
+
+/* FOOTER ********************************* */
+.site-footer {
+  background: #004855 url('../images/wave.png') repeat-x scroll bottom center; 
+}
+/* ----- Fat Footer ------------------ */
+/* CONTENT ******************************** */
+
+/* VIEWS ********************************** */
+/* ----- Search Results -------------- */
+
+/* CONTAINERS ***************************** */
+/* ----- Blocks ---------------------- */
+/* ----- Wells ----------------------- */
+/* ----- Callouts and Blockquotes ---- */
+/* ----- Pullquote Text -------------- */
+
+/* POSTCARD LAYOUTS ********************** */
+
+/* IMAGES ******************************** */
+
+/* ICONS ********************************* */
+
+/* HELPER CLASSES ************************ */
+/* ----- Style ----------------------- */
+/* ----- Positioning ----------------- */
+/* ----- Sizing ---------------------- */
+
+/* GENERAL OVERRIDES ********************* */
+/* ----- Bootstrap Overrides --------- */
+/* ----- Field Collection Overrides -- */
+/* ----- Field Label Overrides ------- */
+
+/* ADMINISTRATION ************************ */
+/* ----- Admin ----------------------- */
+/* ----- User Block ------------------ */
+
+/* MEDIA QUERIES ************************* */
+/* ----- Responsive ------------------ */
+/* ----- Print ----------------------- */
