@@ -8,8 +8,13 @@ stylesheets[all][] = css/style.css
 stylesheets[all][] = css/colour.css
 ; stylesheets[all][] = css/typo_reset.css
 stylesheets[all][] = css/typography.css
+; removal
+; stylesheets[all][] = fontawesome/css/font-awesome.min.css
+; overrides
 stylesheets[all][] = css/bootstrap_override.css
 stylesheets[all][] = css/of_override.css
+; edited versions (only deletion so easy dif/merge/replace)
+stylesheets[all][] = css/open_framework.css
 ; scripts[] = js/script.js
 scripts[] = js/css3-mediaqueries.js
 

@@ -19,6 +19,26 @@ function plus_preprocess_search_result(&$variables) {
   }
 }
 
+function plus_css_alter(&$css) {
+  dpm($css);
+   // List of disabled drupal default css files.
+   $disabled_drupal_css = array(
+      // Remove jquery.ui css files.
+      'misc/ui/jquery.ui.core.css',
+      'misc/ui/jquery.ui.theme.css',
+      'sites/all/themes/custom/fx_themes/plus/fontawesome/css/font-awesome.min.css',
+      //  'misc/ui/jquery.ui.tabs.css',
+   );
+  // Remove drupal default css files.
+  foreach ($css as $key => $item) {
+     if (in_array($key, $disabled_drupal_css)) {
+        // Remove css and its altered version that can be added by jquery_update.
+        unset($css[$css[$key]['data']]);
+        unset($css[$key]);
+     }
+  }
+}
+
 // process_page code for institutional cookie debug
 // global $user;
 // drupal_set_message($_SESSION['institution']);
