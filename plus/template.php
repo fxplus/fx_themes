@@ -19,6 +19,7 @@ function plus_preprocess_search_result(&$variables) {
   }
 }
 
+/*
 function plus_css_alter(&$css) {
   dpm($css);
    // List of disabled drupal default css files.
@@ -37,7 +38,7 @@ function plus_css_alter(&$css) {
         unset($css[$key]);
      }
   }
-}
+}*/
 
 // process_page code for institutional cookie debug
 // global $user;
