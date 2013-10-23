@@ -11,11 +11,6 @@ function ask_plus_menu_link($variables) {
     return theme_menu_link($variables);
   }
 }
-function ask_plus_process_page(&$variables) {
-  // display suite is handling page-node titles so that I can have short/long versions
-  drupal_add_js(path_to_theme().'/js/uservoice.js');
-   drupal_add_js('jQuery(document).ready(function () { alert("Hello!"); });', 'inline');
-}
 
 function _ask_plus_button_attributes($menu_link = FALSE) {
   if (!$menu_link) {
