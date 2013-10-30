@@ -15,6 +15,7 @@ body.front #content-body .news-item {
 .region-content div.social-media h2 {
   margin-right: 10px;
   font-size: 2.2em;
+  margin-bottom: 36px;
 }
 .region-content .social-media a {
   background-image: url('../images/social_circles_sm.png');
