@@ -8,6 +8,9 @@ body.front #content-body .slide-description {
 body.front #content-head {
   display:none;
 }
+body.front #content-body .news-item {
+  margin-bottom:32px;
+}
 
 .region-content div.social-media h2 {
   margin-right: 10px;
