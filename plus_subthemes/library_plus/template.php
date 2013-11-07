@@ -15,7 +15,7 @@ function library_plus_menu_link($variables) {
 }
 
 function library_plus_process_page(&$variables) {
-  if (arg(0) == 'resources' && arg(1) == 'list') {
+  if ((arg(0) == 'resources' || arg(0) == 'journals') && arg(1) == 'list') {
     drupal_add_js(drupal_get_path('theme', 'library_plus') .'/js/resource-list-info.js');
   }
 }
