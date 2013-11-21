@@ -106,6 +106,9 @@ body.front #focus {
     min-height: 0;
   }
 }
+.ui-widget-content a {
+  color:#08c;
+}
 /*
 .content .pull-left span.autofloat-odd,
 #content .pull-left span.autofloat-odd {
