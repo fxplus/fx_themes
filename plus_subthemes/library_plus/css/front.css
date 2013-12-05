@@ -1,10 +1,31 @@
 body.front .view-news-feed.view-display-id-page {
-  margin-top: -60px;
+  /* margin-top: -60px; */
 }
-body.front #content-upper .slide-description {
-  text-align: right;
+body.front #content-body .slide-description {
   padding-right: 24px;
+  margin-left:0;
+  clear: left;
 }
 body.front #content-head {
   display:none;
 }
+body.front #content-body .news-item {
+  margin-bottom:32px;
+}
+
+.region-content div.social-media h2 {
+  margin-right: 10px;
+  font-size: 2.2em;
+  margin-bottom: 36px;
+}
+.region-content .social-media a {
+  background-image: url('../images/social_circles_sm.png');
+  display:inline-block;
+  width: 33px;
+  height: 33px;
+  margin-top: -2px;
+}
+.social-media a.twitter {background-position: 51px 50px;}
+.social-media a.twitter:hover {background-position: 51px 0px;}
+.social-media a.facebook {background-position: 1px 50px;}
+.social-media a.facebook:hover {background-position: 1px 0px;}

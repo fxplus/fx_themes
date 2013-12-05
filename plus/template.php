@@ -6,7 +6,7 @@ function plus_process_page(&$variables) {
     if (isset($variables['node']->field_longtitle['und'][0]['value'])) {
       $variables['title'] = $variables['node']->field_longtitle['und'][0]['value'];
     }
-    if (isset($variables['node']->book) && $variables['node']->book['depth']) {
+    if (isset($variables['node']->book) && $variables['node']->book['depth'] < 3) {
       $variables['title'] = NULL;
     } 
   }

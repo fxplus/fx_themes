@@ -1,5 +1,17 @@
 /* THEME OPTIONS ************************** */
 
+#content-body .field-name-body li {
+font-family: "stag-medium";
+font-size: 21px;
+line-height: 30px;
+color: rgba(137,137,137,1);
+margin-bottom: 16px;
+}
+
+h1,h2,h3,h4,h5 {
+  font-style:normal;
+  font-weight:normal;
+}
 /* GLOBAL ********************************* */
 /* ----- Body ------------------------ */
 /* ----- Custom Fonts ---------------- */

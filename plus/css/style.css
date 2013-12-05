@@ -106,6 +106,9 @@ body.front #focus {
     min-height: 0;
   }
 }
+.ui-widget-content a {
+  color:#08c;
+}
 /*
 .content .pull-left span.autofloat-odd,
 #content .pull-left span.autofloat-odd {
@@ -120,13 +123,16 @@ body.front #focus {
   margin: 0 0 12px 18px;
 }
 */
-#content img {
+#content .field-body img {
   float:right;
   margin: 0 0 12px 18px;
 }
 #content .pull-left img {
   float:left;
   margin: 0;
+}
+#content .field-file {
+  margin-bottom: 12px;
 }
 /* VIEWS ********************************** */
 
