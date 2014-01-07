@@ -7,6 +7,10 @@ version = 1.0
 stylesheets[all][] = css/colour.css
 stylesheets[all][] = css/front.css
 stylesheets[all][] = css/sub_style.css
+<<<<<<< HEAD
+stylesheets[all][] = css/typography.css
+=======
+>>>>>>> f277140fc66131dc6d922d37a01b331b420384c2
 
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)

@@ -24,8 +24,7 @@
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
-	letter-spacing: 1px;
-	font-weight:normal;
+	letter-spacing: 1.5px;
 }
 
 body {
@@ -93,7 +92,7 @@ h2 {
 
 h3, h4 {
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 400;
 	font-family: "stag-medium";
 	font-size: 21px;
 	line-height: 30px;
@@ -114,22 +113,13 @@ h5 {
 	margin-left: none;
 }
 
-.node .content .field-body li  {
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Roboto";
-  font-size: 16px;
-  line-height: 21px;
-  color: #333;
-  margin-bottom: 12px;
-}
-.node .content .field-body ul,
-.node .content .field-body ol {
-  margin-bottom: 2em;
-}
-.node .content .field-body ol {
-  margin-left:2em;
-}
 
+#content-body .field-name-body li {
+	font-family: "stag-medium";
+	font-size: 21px;
+	line-height: 30px;
+	color: rgba(137,137,137,1);
+	margin-bottom: 16px;
+}
 
 
