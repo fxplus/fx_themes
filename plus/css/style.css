@@ -126,6 +126,8 @@ body.front #focus {
 #content img {
   float:right;
   margin: 0 0 12px 18px;
+  max-width:60%;
+  height:auto !important;
 }
 #content .pull-left img {
   float:left;
