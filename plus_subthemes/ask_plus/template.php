@@ -22,6 +22,9 @@ function _ask_plus_button_attributes($menu_link = FALSE) {
     if (isset($menu_link['mlid'])) {
       // classes to apply to individual menu links
       switch($menu_link['mlid']) {
+        case '595':
+          $linkclass = array('btn', 'btn-large', 'btn-primary', 'catalog-link');
+          break;
         default: 
           $linkclass = array('btn', 'btn-large', 'catalog-link');
           break;
