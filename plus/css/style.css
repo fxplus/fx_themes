@@ -123,7 +123,8 @@ body.front #focus {
   margin: 0 0 12px 18px;
 }
 */
-#content .node .field-body img {
+#content .node img,
+#content .field-name-body img {
   float:right;
   margin: 0 0 12px 18px;
   max-width:60%;
