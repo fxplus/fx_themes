@@ -1,11 +1,9 @@
 /* THEME OPTIONS ************************** */
-
+#content-body .field-name-body ul {
+  margin-bottom: 24px;
+}
 #content-body .field-name-body li {
-font-family: "stag-medium";
-font-size: 21px;
-line-height: 30px;
-color: rgba(137,137,137,1);
-margin-bottom: 16px;
+  line-height: 2.4;
 }
 
 h1,h2,h3,h4,h5 {
