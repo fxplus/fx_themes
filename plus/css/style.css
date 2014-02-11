@@ -123,8 +123,12 @@ body.front #focus {
   margin: 0 0 12px 18px;
 }
 */
+<<<<<<< Updated upstream
 #content .node img,
 #content .field-name-body img {
+=======
+#content .node img {
+>>>>>>> Stashed changes
   float:right;
   margin: 0 0 12px 18px;
   max-width:60%;
