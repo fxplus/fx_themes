@@ -1,0 +1,6 @@
+body.front .content-head {
+  display:none;
+}
+body.front #focus.main {
+  margin-bottom: none;
+}

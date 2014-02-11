@@ -1,5 +1,25 @@
 <?php 
 
+function ask_plus_process_page(&$variables) {
+  // display suite is handling page-node titles so that I can have short/long versions
+  if (isset($variables['node']) && $variables['node']->type == 'page'){
+    if (isset($variables['node']->field_longtitle['und'][0]['value'])) {
+      $variables['title'] = $variables['node']->field_longtitle['und'][0]['value'];
+    }
+          // if this is the main book (ie the website not the referencing guide) 
+    if ($variables['node']->book['menu_name'] == 'book-toc-1') {
+      if (isset($variables['node']->book) && $variables['node']->book['depth'] < 3) {
+        $variables['title'] = NULL;
+      }
+    } else {
+      // do not display book title on top level page, as duplicates block title
+      if (isset($variables['node']->book) && $variables['node']->book['depth'] < 2) {
+        $variables['title'] = NULL;
+      }
+    }
+  }
+}
+
 function ask_plus_menu_link($variables) {
   if ($variables['element']['#original_link']['menu_name'] == 'menu-home-actions') {
     $element = $variables['element'];
@@ -23,7 +43,10 @@ function _ask_plus_button_attributes($menu_link = FALSE) {
       // classes to apply to individual menu links
       switch($menu_link['mlid']) {
         case '595':
-          $linkclass = array('btn', 'btn-large', 'btn-primary', 'catalog-link');
+          $linkclass = array('btn', 'btn-large', 'btn-fxblue', 'catalog-link');
+          break;
+        case '1172':
+          $linkclass = array('btn', 'btn-large', 'btn-fxolive', 'catalog-link');
           break;
         default: 
           $linkclass = array('btn', 'btn-large', 'catalog-link');

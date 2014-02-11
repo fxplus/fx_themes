@@ -81,7 +81,12 @@
 <div id="focus" class="clearfix main row" role="main">
   <div class="container">
     <?php if (($page['content']) || ($feed_icons)): ?>
-      <div id="content-body" class="span9"> <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
+
+      <div id="content-body" class="span9">
+        <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
+          <div class="tabs" style="margin:0 0 -30px 0;"> <?php print render($tabs); ?> </div>
+        <?php endif; ?>
+        <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
     <?php endif; ?>
     <?php if ($page['main_top']): ?>
     <div id="main-top" class="row-fluid main-top"> <?php print render($page['main_top']); ?> </div>
