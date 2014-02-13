@@ -51,20 +51,25 @@ p {
 }
 
 
-blockquote,
-blockquote p {
+blockquote {
 	font-family: source-sans-pro;
+  font-size: 15px;  
 	padding-left: 2em;
 	border-left: solid #bbb;
 	line-height: 24px;
 	margin-bottom: 24px;
 	padding: 12px 2em;
 	background: #f0f0f0;
-	margin-top: 1px;
+  margin-top: -18px;
 	/* font-style: italic; (interfered with use in referencing guide)*/
 	/* font-weight: 400;*/
 }
-
+blockquote p {
+    font-size: 15px;
+    font-family: serif;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
 
 h1 {
 	font-family: "stag-book";
