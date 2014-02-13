@@ -6,6 +6,7 @@ version = 1.0
 
 stylesheets[all][] = css/colour.css
 stylesheets[all][] = css/front.css
+stylesheets[all][] = css/sub_style.css
 ; scripts[] = js/uservoice.js
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
