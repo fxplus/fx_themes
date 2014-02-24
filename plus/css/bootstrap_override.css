@@ -38,6 +38,9 @@
   body.front #focus div.block {
     margin-top:32px;
   }
+  body.front #focus div.block h2 {
+    margin-top:0;
+  }
 }
 /* ----- Secondary Navigation -------- */
 /* ----- Breadcrumbs ----------------- */
