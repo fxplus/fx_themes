@@ -1,3 +1,8 @@
+body.front #focus {
+  min-height:196px;
+}
+.main .block { margin-bottom:0;}
+
 body.front .view-news-feed.view-display-id-page {
   /* margin-top: -60px; */
 }
@@ -13,19 +18,37 @@ body.front #content-body .news-item {
   margin-bottom:32px;
 }
 
-.region-content div.social-media h2 {
-  margin-right: 10px;
-  font-size: 2.2em;
-  margin-bottom: 36px;
+#block-views-library-tweets-block .item-list ul li {
+  margin-bottom:24px;
 }
-.region-content .social-media a {
+#block-views-library-tweets-block .tweet-text {
+  color: #666;
+}
+
+#block-views-news-feed-block,
+#block-views-library-tweets-block {
+  margin-top: -24px;
+}
+
+/* hide editing tabs etc associated with homepage node */
+body.front .content-body {display:none;}
+
+div.social-media h2 {
+  margin-right: 8px;
+}
+div.social-media a {
   background-image: url('../images/social_circles_sm.png');
   display:inline-block;
   width: 33px;
   height: 33px;
-  margin-top: -2px;
+  margin-top:22px;
 }
-.social-media a.twitter {background-position: 51px 50px;}
-.social-media a.twitter:hover {background-position: 51px 0px;}
-.social-media a.facebook {background-position: 1px 50px;}
-.social-media a.facebook:hover {background-position: 1px 0px;}
+div.social-media {
+  margin-bottom:12px;
+}
+.social-media a.twitter {background-position: 101px 50px; opacity:.6;}
+.social-media a.twitter:hover {background-position: 101px 0px; opacity:1;}
+.social-media a.facebook {background-position: 1px 50px; opacity:.4;}
+.social-media a.facebook:hover {background-position: 1px 0px; opacity:1;}
+.social-media a.pinterest {background-position: 51px 50px; opacity:.4;}
+.social-media a.pinterest:hover {background-position: 51px 0px; opacity:1;}

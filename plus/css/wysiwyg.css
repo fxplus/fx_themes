@@ -1,0 +1,9 @@
+img.media-image {
+  float:right;
+  margin: 0 0 10px 10px;
+}
+
+p a {
+  text-decoration: none;
+  font-weight: normal;
+}
