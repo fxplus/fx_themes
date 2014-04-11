@@ -121,9 +121,10 @@
             <div id="help" class="clearfix"> <?php print render($page['help']); ?> </div>
             <?php endif; ?>
             <?php if ($action_links): ?>
+            <!--
             <ul class="action-links">
               <?php print render($action_links); ?>
-            </ul>
+            </ul>-->
             <?php endif; ?>
           </div>
           <?php if ($page['content_top']): ?>
