@@ -4,3 +4,6 @@ body.front .content-head {
 body.front #focus.main {
   margin-bottom: none;
 }
+body.front #sidebar-first, body.front #content {
+  margin-top: 0;
+}

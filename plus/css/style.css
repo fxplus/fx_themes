@@ -123,12 +123,9 @@ body.front #focus {
   margin: 0 0 12px 18px;
 }
 */
-<<<<<<< Updated upstream
+
 #content .node img,
 #content .field-name-body img {
-=======
-#content .node img {
->>>>>>> Stashed changes
   float:right;
   margin: 0 0 12px 18px;
   max-width:60%;
@@ -147,8 +144,8 @@ body.front #focus {
 
 /* CONTAINERS ***************************** */
 /* ----- Blocks ---------------------- */
-body.front #focus div #block-menu-menu-home-actions {
-  margin-top:   24px;
+body.front #focus .field-body h2 {
+  margin-top:  0;
 }
 #block-menu-menu-home-actions .btn {
  margin-bottom: 12px;

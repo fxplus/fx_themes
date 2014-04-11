@@ -1,5 +1,14 @@
 /* THEME OPTIONS ************************** */
 
+.field-body h2,h3,h4 {
+  clear:both;
+}
+.field-body p + h2,
+.field-body blockquote + h2 {
+  padding-top:32px;
+  border-top: 1px solid #ddd;
+}
+
 /* GLOBAL ********************************* */
 /* ----- Body ------------------------ */
 /* ----- Custom Fonts ---------------- */
@@ -51,6 +60,16 @@
     float: right;
     margin: 0 0 20px 20px;
   }
+}
+/* manual class to force clearing for figures */
+.field-body img.clear-image,
+.field-body blockquote img {
+  float:left;
+  clear: both;
+  margin: 10px 0 20px 0;
+}
+blockquote img + p {
+  clear:both;
 }
 
 /* ICONS ********************************* */
