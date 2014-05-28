@@ -1,0 +1,46 @@
+.views-exposed-form .views-exposed-widget .form-submit {
+/*  margin-top: 0;*/
+}
+
+div.view-filters {
+  float:right;
+  margin-top: -112px;
+  display:none;
+}
+
+body.admin-menu div.view-filters {
+  display: block;
+  opacity: 0.2;
+}
+.view-content {
+  margin-bottom:20px;
+}
+ul.pager {
+  float:left;
+}
+.item-list ul.pager li {
+  margin: 0;
+  padding-left:0;
+}
+ul.pager li>a{
+  border-radius: 5px;
+  width: 8em;
+}
+
+h2, h3, h4 {
+  font-weight: normal;
+  margin-top: 2em;
+}
+.view-content .service-provider {
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.view-content .service-provider h4 {
+  padding-left: 50px;
+}
+.view-content .provider-8 {
+  background-image: url(../images/service-icons/openbook.png);
+}
+.view-content .provider-7 {
+  background-image: url(../images/service-icons/pen.png);
+}

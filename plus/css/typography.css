@@ -16,7 +16,7 @@
 }
 
 
-#site-name a {
+#site-name a, #site-slogan {
 	font-family: "stag-book";
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
@@ -26,6 +26,10 @@
 	text-rendering: optimizeLegibility;
 	letter-spacing: 1px;
 	font-weight:normal;
+}
+
+#site-slogan {
+  color: #91dff6;
 }
 
 body {
