@@ -31,10 +31,11 @@ h2, h3, h4 {
   font-weight: normal;
   margin-top: 2em;
 }
+
 .view-content .service-provider {
   background-repeat: no-repeat;
   background-position: top left;
-  margin-left: -40px;
+  /*margin-left: -40px;*/
   padding-left: 40px;
 }
 .view-content .service-provider h4 {
@@ -46,7 +47,6 @@ h2, h3, h4 {
 .view-content .provider-7 {
   background-image: url(../../ask_plus/images/icons/icon_73.png);
   background-position: -10px 0;
-  padding: 10px;
 }
 .view-content .provider-9 {
   background-image: url(../images/service-icons/flags.png);
