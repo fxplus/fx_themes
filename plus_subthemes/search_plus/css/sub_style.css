@@ -44,3 +44,11 @@ h2, h3, h4 {
 .view-content .provider-7 {
   background-image: url(../images/service-icons/pen.png);
 }
+.view-content .provider-9 {
+  background-image: url(../images/service-icons/flags.png);
+}
+
+
+media="all" @media (min-width: 1200px) [class*="span"] {
+  margin-left: 0;
+}
