@@ -34,15 +34,19 @@ h2, h3, h4 {
 .view-content .service-provider {
   background-repeat: no-repeat;
   background-position: top left;
+  margin-left: -40px;
+  padding-left: 40px;
 }
 .view-content .service-provider h4 {
-  padding-left: 50px;
+  /*padding-left: 50px;*/
 }
 .view-content .provider-8 {
   background-image: url(../images/service-icons/openbook.png);
 }
 .view-content .provider-7 {
-  background-image: url(../../ask_plus/images/icons/icon_72.png);
+  background-image: url(../../ask_plus/images/icons/icon_73.png);
+  background-position: -10px 0;
+  padding: 10px;
 }
 .view-content .provider-9 {
   background-image: url(../images/service-icons/flags.png);
