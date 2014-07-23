@@ -19,7 +19,7 @@
         <?php if ($site_name || $site_slogan): ?>
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
-          <div id="site-slogan" class="site-slogan"><?php print $site_slogan; ?></div>
+          <div id="site-slogan" class="site-slogan"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_slogan; ?></a></div>
           <?php endif; ?>
           <div id="site-name" class="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></div>
           <?php endif; ?>

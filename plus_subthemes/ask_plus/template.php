@@ -20,7 +20,7 @@ function ask_plus_process_page(&$variables) {
     // swap titles around for languages book (effectively a subsection of site)
     if ($variables['node']->book['menu_name'] == 'book-toc-15') {
       $variables['site_slogan'] = $variables['site_name'];
-      $variables['site_name'] = $variables['node']->title;
+      $variables['site_name'] = "Languages";
     }
   }
 }
