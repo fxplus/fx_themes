@@ -17,6 +17,10 @@ function ask_plus_process_page(&$variables) {
         $variables['title'] = NULL;
       }
     }
+    if ($variables['node']->book['menu_name'] == 'book-toc-15') {
+      $variables['site_name'] = $variables['node']->title;
+      $variables['site_slogan'] = 'ASK: Academic Skills';
+    }
   }
 }
 
