@@ -29,6 +29,9 @@
 #main-menu .navbar .nav>.active>a {
   color: #fff;
 }
+#main {
+  background-color: white;
+}
 
 @media (max-width: 767px) {
   #header {
