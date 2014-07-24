@@ -1,0 +1,30 @@
+p {
+  font-size: 10pt;
+  line-height: 1.5;
+  margin-bottom: .5em;
+}
+
+p, a, h1, h2, h3, h4 {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 14pt;
+}
+h2 {
+  font-size: 12pt;
+  color: #555;
+}
+h1, h2, h3, h4, blockquote {
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, *, div {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 8pt;
+
+}
