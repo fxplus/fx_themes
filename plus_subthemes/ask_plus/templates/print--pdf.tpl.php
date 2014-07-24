@@ -82,7 +82,7 @@
       <link rel='shortcut icon' href='<?php print theme_get_setting('favicon') ?>' type='image/x-icon' />
     <?php endif; ?>
     <?php print $css; ?>
-    <link rel="stylesheet" type="text/css" href="http://ask.localhost:8082/sites/all/themes/custom/fx_themes/plus_subthemes/ask_plus/css/booklet.css" />
+    <link rel="stylesheet" type="text/css" href="http://ask.fxplus.ac.uk/sites/all/themes/custom/fx_themes/plus_subthemes/ask_plus/css/booklet.css" />
   </head>
   <body>
     <?php if (!isset($node->type)): ?>
