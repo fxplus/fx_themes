@@ -87,10 +87,15 @@ blockquote img + p {
 h3, h4 {
   font-weight: 400;
 }
-.block ul li {
+.block ul li, #block-menu-block-2 ul li {
 list-style-image: none;
 list-style-type: none;
+line-height: 1.5;
 }
+.block.flat-list ul, .block.flat-list ul li {
+ margin: 0 ;
+}
+
 .block ul li.active {
 list-style-image: none;
 list-style-type: disc;
