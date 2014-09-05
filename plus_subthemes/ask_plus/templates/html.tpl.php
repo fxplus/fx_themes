@@ -9,6 +9,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php print $head_title; ?></title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
   <?php print $styles; ?>
 
   <!--[if IE 7]>

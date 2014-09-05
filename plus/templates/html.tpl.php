@@ -9,6 +9,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php print $head_title; ?></title>
+  
   <?php print $styles; ?>
   <!--[if IE 7]>
   <link rel="stylesheet" href="<?php print base_path() . drupal_get_path('theme', 'open_framework') . '/fontawesome/css/font-awesome-ie7.min.css'; ?>">

@@ -73,7 +73,10 @@ function _ask_plus_button_attributes($menu_link = FALSE) {
     }
   }
   return $attributes;
+}
 
+function ask_plus_item_list($variables) {
+  return 'test';
 }
 // called from template (should probably be theme function)
 // sets headings in node body to appropriate level according to book depth
