@@ -8,6 +8,11 @@
   padding-top:32px;
   border-top: 1px solid #ddd;
 }
+.ds-2col-stacked-fluid .field-left-column,
+.ds-2col-stacked-fluid .field-right-column {
+  margin-right: 20px;
+}
+
 
 /* GLOBAL ********************************* */
 /* ----- Body ------------------------ */
@@ -71,7 +76,15 @@
 blockquote img + p {
   clear:both;
 }
+.pullquote, .pullquote-large, blockquote > p {
+  padding-left: 10px;
+  text-indent: -7px;
+  line-height: 1.5em;
+}
 
+h3, h4 {
+  font-weight: 400;
+}
 /* ICONS ********************************* */
 
 /* HELPER CLASSES ************************ */
