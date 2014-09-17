@@ -19,12 +19,6 @@ blockquote p {
 .reftag {
   color: #00699f;
 }
-.reference-other, .reference-other:nth-child(odd) {
-  color: #00699f;
-}
-.reference-other:nth-child(even) {
-  color: #004467;
-}
 
 .reference-auth,
 .reference-author,
@@ -34,9 +28,12 @@ blockquote p {
 .reference-date {
   color: #166C66;
 }
-.reference-pub
+.reference-pub,
 .reference-publisher {
   color: #751871;
+}
+.reference-publoc {
+  color: #4a0f48;
 }
 .reference-title {
   color: #73851C;
@@ -44,7 +41,12 @@ blockquote p {
 .reference-title:first-child {
   color: #91A923;
 }
-
+.reference-other, .reference-other:nth-child(odd) {
+  color: #00699f;
+}
+.reference-other:nth-child(even) {
+  color: #004467;
+}
 
 
 /*blockquote:hover .reference- {
