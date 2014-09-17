@@ -14,10 +14,7 @@
   font-family: 'stag-light';
   src: url('../fonts/stag/Stag-Light.otf');
 }
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url('http://fonts.googleapis.com/css?family=Roboto+Slab');
-}
+
 
 #site-name a, #site-slogan {
 	font-family: "stag-book";
