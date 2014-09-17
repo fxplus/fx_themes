@@ -35,10 +35,10 @@ blockquote p {
 .reference-publoc {
   color: #4a0f48;
 }
-.reference-title {
+.reference-title, .reference-title:nth-child(odd) {
   color: #73851C;
 }
-.reference-title:first-child {
+.reference-title:nth-child(even) {
   color: #91A923;
 }
 .reference-other, .reference-other:nth-child(odd) {
