@@ -24,6 +24,10 @@ function ask_plus_process_page(&$variables) {
     }
     // if ($variables['node']->book['menu_name'] == 'book-toc-74') {
     // }
+
+    if (is_array($variables['node']->book) && $variables['node']->book['plid'] == 1188) {
+      drupal_add_css(drupal_get_path('theme', 'ask_plus') . "/css/refguide.css", array('group' => CSS_THEME, 'weight' => 10));
+    }
   }
 }
 
