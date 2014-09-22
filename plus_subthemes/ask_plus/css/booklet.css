@@ -2,6 +2,9 @@
   font-family: 'stag-medium';
   src: url('http://ask.fxplus.ac.uk/sites/all/themes/custom/fx_themes/plus/fonts/stag/Stag-Medium.otf');
 }
+body {
+  padding:0;
+}
 h1 {
   font-size: 18pt;
   letter-spacing: 0;
