@@ -1,24 +1,28 @@
+@font-face {
+  font-family: 'stag-medium';
+  src: url('http://ask.fxplus.ac.uk/sites/all/themes/custom/fx_themes/plus/fonts/stag/Stag-Medium.otf');
+}
 h1 {
-  font-size: 24pt;
+  font-size: 18pt;
   letter-spacing: 0;
 }
 h2 {
-  font-size: 18pt;
-}
-h3 {
   font-size: 16pt;
 }
 h3 {
   font-size: 14pt;
-  font-weight: bold;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: Verdana;
+  font-family: 'stag-medium';
+  font-weight: normal;
+}
+h4, h5, h6 {
+  font-size: 12pt;
   font-weight: bold;
 }
 p, ul li, .field-body div {
-  font-size: 14pt;
+  font-size: 11pt;
   line-height: 1.5;
   font-family: verdana;
 }
@@ -35,13 +39,13 @@ blockquote {
   background-color: #ddd;
 }
 blockquote p, blockquote div {
-  font-size: 14pt;
+  font-size: 12pt;
 }
 .section-2, .section-3 {
   margin-bottom: 2em;
 }
 .node .content .field-body {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .node .content .field-body p {
     color: black;
