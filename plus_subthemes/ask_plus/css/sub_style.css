@@ -87,7 +87,7 @@ blockquote img + p {
 h3, h4 {
   font-weight: 400;
 }
-.block ul li, #block-menu-block-2 ul li {
+#sidebar-first .block ul li, #block-menu-block-2 ul li {
 list-style-image: none;
 list-style-type: none;
 line-height: 1.5;
