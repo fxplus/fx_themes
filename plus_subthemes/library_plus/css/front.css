@@ -1,5 +1,6 @@
 body.front #focus {
   min-height:196px;
+  padding-bottom: 30px;
 }
 .main .block { margin-bottom:0;}
 
