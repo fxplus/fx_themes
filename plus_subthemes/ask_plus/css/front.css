@@ -1,5 +1,5 @@
 body.front .content-head {
-  display:none;
+  /*display:none;*/
 }
 body.front #focus.main {
   margin-bottom: none;
