@@ -102,6 +102,9 @@
       <?php endif; ?>
       <div id="content" class="mc-content <?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print 'span6'; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print 'span9'; else: print 'span12'; endif; ?>">
         <div id="content-wrapper" class="content-wrapper">
+          <?php if ($messages): ?>
+            <div id="console" class="clearfix"><?php print $messages; ?></div>
+          <?php endif; ?>
           <div id="content-head" class="row-fluid content-head">
             <?php if ($page['highlighted']): ?>
             <div id="highlighted" class="clearfix"><?php print render($page['highlighted']); ?></div>
@@ -114,9 +117,7 @@
             <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
             <div class="tabs"> <?php print render($tabs); ?> </div>
             <?php endif; ?>
-            <?php if ($messages): ?>
-            <div id="console" class="clearfix"><?php print $messages; ?></div>
-            <?php endif; ?>
+            <!--messages go here-->
             <?php if ($page['help']): ?>
             <div id="help" class="clearfix"> <?php print render($page['help']); ?> </div>
             <?php endif; ?>
