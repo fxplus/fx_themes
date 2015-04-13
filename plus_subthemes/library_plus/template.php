@@ -1,6 +1,6 @@
 <?php 
 
-// // add template for fx_searchblock
+// // add template (file) for fx_searchblock
 // function library_plus_theme() {
 //   dpm('library_plus_theme');
 //   return array( 
@@ -14,15 +14,31 @@
 
 // add theme function for fx_searchblock
 function library_plus_theme() {
-  dpm('library_plus_theme');
   return array( 
     'fx_searchblock_block_form' => array(
       'render element' => 'form',
     ),
   );
 }
-function library_plus_fx_searchblock_block_form($variables) {
-  dpm('library_plus_fx_searchblock_block_form');
+/* 
+ * theme function to customise display of the catalog/search box
+ *
+ * Could equally be done via template+preprocess, or via hook_form_alter
+ */
+function library_plus_fx_searchblock_block_form($variables) { 
+  // removes wrapper div from search query textfield (req for bootstrap or OF)
+  unset($variables['form']['fx_searchblock_form']['#theme_wrappers']);
+  // open framework search block styling
+  $variables['form']['fx_searchblock_form']['#title_display'] = 'invisible';
+  $variables['form']['fx_searchblock_form']['#attributes']['class'][] = 'input-medium search-query';
+  $variables['form']['fx_searchblock_form']['#attributes']['placeholder'] = t('Search the catalogue');
+  $variables['form']['submit']['#attributes']['class'][] = 'btn-search';
+  $variables['form']['submit']['#attributes']['alt'] = t('Search button');
+  // unset($variables['form']['submit']['#value']);    
+  $variables['form']['submit']['#type'] = 'image_button';
+      // $form['submit']['#type'] = 'image_button';
+  $variables['form']['submit']['#src'] = drupal_get_path('theme', 'open_framework') . '/images/searchbutton.png';
+  dpm($variables);
   return drupal_render_children($variables['form']);
 }
 
@@ -89,24 +105,26 @@ function _library_plus_button_attributes($menu_link = FALSE) {
 }
 
 /* Search Form Block (taken from open_framework) */
-// function library_plus_preprocess_block(&$variables) {
-//   if ($variables['block']->module == 'fx_searchblock') {
-//     $variables['attributes_array']['role'] = 'search';
-//   }
-// }
+function library_plus_preprocess_block(&$variables) {
+  if ($variables['block']->module == 'fx_searchblock') {
+    $variables['attributes_array']['role'] = 'search';
+  }
+}
 
-// function library_plus_form_alter(&$form, &$form_state, $form_id) {
-//   if ($form_id == 'fx_searchblock_block_form') {
-//     $form['fx_searchblock_block_form']['#title_display'] = 'invisible';
-//     $form['fx_searchblock_block_form']['#attributes']['class'][] = 'input-medium search-query';
-//     $form['fx_searchblock_block_form']['#attributes']['placeholder'] = t('Search this site...');
-//     $form['actions']['submit']['#attributes']['class'][] = 'btn-search';
-//     $form['actions']['submit']['#attributes']['alt'] = t('Search button');
-//     unset($form['actions']['submit']['#value']);    
-//     $form['actions']['submit']['#type'] = 'image_button';
-//     $form['actions']['submit']['#src'] = drupal_get_path('theme', 'open_framework') . '/images/searchbutton.png';
-//   }
-// }
+function library_plus_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'fx_searchblock_block_form') {
+    // for some reason this will not take effect from the theme function (library_plus_fx_searchblock_block_form)
+    $form['submit']['#type'] = 'image_button';
+    // unset($form['fx_searchblock_block_form']['#theme_wrappers']);
+    // $form['fx_searchblock_block_form']['#title_display'] = 'invisible';
+    // $form['fx_searchblock_block_form']['#attributes']['class'][] = 'input-medium search-query';
+    // $form['fx_searchblock_block_form']['#attributes']['placeholder'] = t('Search this site...');
+    // $form['submit']['#attributes']['class'][] = 'btn-search';
+    // $form['submit']['#attributes']['alt'] = t('Search button');
+    // unset($form['actions']['submit']['#value']);    
+    // $form['submit']['#src'] = drupal_get_path('theme', 'open_framework') . '/images/searchbutton.png';
+  }
+}
 
 
 /*
