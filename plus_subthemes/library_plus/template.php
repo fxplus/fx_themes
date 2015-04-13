@@ -37,7 +37,6 @@ function library_plus_fx_searchblock_block_form($variables) {
   $variables['form']['submit']['#type'] = 'image_button';
       // $form['submit']['#type'] = 'image_button';
   $variables['form']['submit']['#src'] = drupal_get_path('theme', 'open_framework') . '/images/searchbutton.png';
-  dpm($variables);
   return drupal_render_children($variables['form']);
 }
 
