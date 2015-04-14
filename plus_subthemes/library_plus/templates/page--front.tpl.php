@@ -90,6 +90,9 @@
     <?php if (!($is_front) && ($breadcrumb)): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
+    <?php if ($messages): ?>
+      <div id="console" class="clearfix"><?php print $messages; ?></div>
+    <?php endif; ?>
     <?php if ($page['main_upper']): ?>
     <div id="main-upper" class="row-fluid main-upper"> <?php print render($page['main_upper']); ?> </div>
     <?php endif; ?>
@@ -114,9 +117,7 @@
             <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
             <div class="tabs"> <?php print render($tabs); ?> </div>
             <?php endif; ?>
-            <?php if ($messages): ?>
-            <div id="console" class="clearfix"><?php print $messages; ?></div>
-            <?php endif; ?>
+            
             <?php if ($page['help']): ?>
             <div id="help" class="clearfix"> <?php print render($page['help']); ?> </div>
             <?php endif; ?>
