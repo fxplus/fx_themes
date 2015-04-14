@@ -14,4 +14,4 @@ $block_context_block = array(
     ),
 );
 
-$variable_set('contextual_block_class', $block_context_block);
+variable_set('contextual_block_class', $block_context_block);
