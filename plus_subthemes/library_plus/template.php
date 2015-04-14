@@ -126,25 +126,25 @@ function library_plus_form_alter(&$form, &$form_state, $form_id) {
 
 
 /*
- * Apply classes to blocks dynamically so that contexts/theme-settings can be altered
- * by admin to change layout disabled because contrib module
- * cbc will this, [dev] admin of multiple blocks could be a pain through ui
- * see cbc_set_block_classes to alter through code
- * (https://www.drupal.org/project/cbc)
+ * Apply classes to blocks dynamically so that contexts/theme-settings
+ * altered by admin will change layout 
+ * cbc/block_class would do this, but theme and homepage specific
  */
-// function plus_preprocess_block(&$variables) {
+function plus_preprocess_block(&$variables) {
   // dpm($variables['block']->bid);
-  // dpm($variables);
-  // $blockclasses = array(
-  //   'fx_searchblock-form' => 'span4',
-  //   'menu-menu-quick-links' => 'span4',
-  //   'menu-menu-home-actions' => 'span4',
-  //   );
-  // $classblocks = array_flip($blockclasses);
-  // if ($variables['block']->bid === 'fx_searchblock-form') {
-  //   // dpm($variables);
-  //   $variables['classes_array'][] = 'span4';
-  //   // dpm($variables);
-  //   // do something for this block
-  // }
-// }
+  // dpm($variables['block']);
+  $contexts = context_active_contexts();
+  // dpm($contexts);
+  if (module_exists('context')){
+    if (isset($contexts['homepage_content'])) {
+      switch ($variables['block']->bid) {
+        case 'fx_searchblock-form':
+          $variables['classes_array'][] = 'span6'; break;
+        case 'menu-menu-quick-links':
+          $variables['classes_array'][] = 'span3'; break;
+        case 'menu-menu-home-actions':
+          $variables['classes_array'][] = 'span3'; break;
+      }
+    }
+  }
+}
