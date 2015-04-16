@@ -113,6 +113,9 @@ h3, h4 {
 	color: rgba(137,137,137,1);
 	margin-bottom: 16px;
 }
+h3 a, h4 a {
+    color: #3C9AC9;
+}
 
 
 h5 {
