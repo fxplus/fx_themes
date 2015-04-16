@@ -115,7 +115,7 @@
             <?php endif; ?>
             <?php print render($title_suffix); ?>
             <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
-            <div class="tabs"> <?php print render($tabs); ?> </div>
+            <!-- <div class="tabs"> <?php print render($tabs); ?> </div> -->
             <?php endif; ?>
             
             <?php if ($page['help']): ?>
@@ -135,7 +135,7 @@
           <div id="content-upper" class="row-fluid content-upper"> <?php print render($page['content_upper']); ?> </div>
           <?php endif; ?>
           <?php if (($page['content']) || ($feed_icons)): ?>
-          <div id="content-body" class="row-fluid content-body"> <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
+          <div id="content-body" class="content-body row"> <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
           <?php endif; ?>
           <?php if ($page['content_row2']): ?>
           <div id="content-row2" class="row-fluid content-row2"> <?php print render($page['content_row2']); ?> </div>

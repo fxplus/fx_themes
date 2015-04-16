@@ -131,7 +131,7 @@ function library_plus_form_alter(&$form, &$form_state, $form_id) {
  * cbc/block_class would do this, but theme and homepage specific
  */
 function plus_preprocess_block(&$variables) {
-  // dpm($variables['block']->bid);
+  //dpm($variables['block']->bid);
   // dpm($variables['block']);
   $contexts = context_active_contexts();
   // dpm($contexts);
@@ -139,11 +139,37 @@ function plus_preprocess_block(&$variables) {
     if (isset($contexts['homepage_content'])) {
       switch ($variables['block']->bid) {
         case 'fx_searchblock-form':
-          $variables['classes_array'][] = 'span6'; break;
+          // Search the library
+          $variables['classes_array'][] = 'span4';
+          // $variables['classes_array'][] = 'well'; 
+          break;
         case 'menu-menu-quick-links':
-          $variables['classes_array'][] = 'span3'; break;
+          // Quick Links
+          $variables['classes_array'][] = 'span4';
+          $variables['classes_array'][] = 'pull-left'; 
+          break;
         case 'menu-menu-home-actions':
-          $variables['classes_array'][] = 'span3'; break;
+          // Calls to Action (account etc)
+          $variables['classes_array'][] = 'span3';
+          $variables['classes_array'][] = 'pull-right'; 
+          break;
+        case 'views-news_feed-block_4':
+          // News and social media links
+          $variables['classes_array'][] = 'span3'; 
+          // $variables['classes_array'][] = 'well'; 
+          $variables['classes_array'][] = 'pull-right'; 
+          // $variables['classes_array'][] = 'well'; 
+          break;
+        case 'views-front_page_features-block_1':
+          // featured content
+          $variables['classes_array'][] = 'span4'; 
+          // $variables['classes_array'][] = 'pull-right';
+          break;
+        case 'views-front_page_features-block_2':
+          // long-term featured content
+          $variables['classes_array'][] = 'span4'; 
+          // $variables['classes_array'][] = 'pull-right';
+          break;  
       }
     }
   }
