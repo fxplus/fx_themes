@@ -17,11 +17,9 @@ body.front #content-body .slide-description {
 body.front #content-head {
   display:none;
 }
-body.front .block h2:first-of-type,
-body.front .block h3:first-of-type,
-body.front .block h4:first-of-type,
-{
-  line-height: 0;
+
+body.front .block h2,
+body.front .block h3 {
   margin-top: 0;
 }
 body.front #content-body .news-item {
