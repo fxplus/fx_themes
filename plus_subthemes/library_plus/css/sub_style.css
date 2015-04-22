@@ -18,7 +18,7 @@ div.user-alert {
   background: #4D9FAE;
   opacity: 0.8;
   border-top: 1px solid #0f798c;
-  border-bottom: 2px solid #cbe0ed;
+  /*border-bottom: 2px solid #cbe0ed;*/
 }
 div.user-alert.ua-alert {  background: #e94e24; opacity: 0.8;}
 div.user-alert.ua-warning {  background: #DF9A0C; opacity: 0.8;}
