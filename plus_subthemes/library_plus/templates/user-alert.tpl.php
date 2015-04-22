@@ -11,7 +11,7 @@
  */
 ?>
 
-<div id="user-alert-<?php print $nid; ?>" class="user-alert">
-   <?php if ($is_closeable) : ?><div class="user-alert-close"><a href="javascript:;" rel="<?php print $nid; ?>">x</a></div><?php endif; ?>
+<div id="user-alert-<?php print $nid; ?>" class="user-alert <?php print $importance; ?>">
+   <?php if ($is_closeable) : ?><div class="user-alert-close"><a href="javascript:;" rel="<?php print $nid; ?>">X</a></div><?php endif; ?>
    <div class="user-alert-message"><div class="container"><?php if ($alert_label) : ?><span class="user-label"><?php print $alert_label; ?>:</span><?php endif; ?> <?php print $body; ?></div></div>
 </div>

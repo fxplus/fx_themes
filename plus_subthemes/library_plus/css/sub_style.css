@@ -13,14 +13,15 @@ h1,h2,h3,h4,h5 {
 }
 
 div.user-alert {
- width: 100%;
- height: 100%;
- background: #e94e24;
- opacity: 0.8;
- line-height: 35px;
- border-top: 2px solid #d04621;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  border-top: 1px solid #0f798c;
+  border-bottom: 2px solid #cbe0ed;
 }
-
+div.user-alert.alert {  background: #e94e24; opacity: 0.8;}
+div.user-alert.warning {  background: #DF9A0C; opacity: 0.8;}
+div.user-alert.info {  background: #4D9FAE; opacity:0.6; /*background: #95a725; opacity: 0.8;*/ }
 div.user-alert div.user-alert-message {
   width: 100%;
   overflow: visible;

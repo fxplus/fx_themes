@@ -176,48 +176,14 @@ function plus_preprocess_block(&$variables) {
 }
 
 /**
- * Returns HTML for status and/or error messages, grouped by type.
+ * Implements hook_preprocess()
  */
-function bootstrap_status_messages($variables) {
-  $display = $variables['display'];
-  $output = '';
-
-  $status_heading = array(
-    'status' => t('Status message'),
-    'error' => t('Error message'),
-    'warning' => t('Warning message'),
-  );
-
-  // Map Drupal message types to their corresponding Bootstrap classes.
-  // @see http://twitter.github.com/bootstrap/components.html#alerts
-  $status_class = array(
-    'status' => 'success',
-    'error' => 'error',
-    'warning' => 'info',
-  );
-
-  foreach (drupal_get_messages($display) as $type => $messages) {
-    $class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : '';
-    $output .= "<div class=\"alert alert-block$class\">\n";
-    $output .= "  <a class=\"close\" data-dismiss=\"alert\" href=\"#\">&times;</a>\n";
-
-    if (!empty($status_heading[$type])) {
-      $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
-    }
-
-    if (count($messages) > 1) {
-      $output .= " <ul>\n";
-      foreach ($messages as $message) {
-        $output .= '  <li>' . $message . "</li>\n";
-      }
-      $output .= " </ul>\n";
-    }
-    else {
-      $output .= $messages[0];
-    }
-
-    $output .= "</div>\n";
-  }
-  return $output;
+function library_plus_preprocess_user_alert(&$vars) {
+  $node = $vars['node'];
+  $tag = taxonomy_term_load($node->field_tags['und'][0]['tid']);
+  $vars['importance'] = $tag ? $tag->name : 'alert';
+  $vars['alert_label'] = variable_get('user_alert_label', 'User Alert');
+  $vars['nid'] = $vars['node']->nid;
+  $vars['body'] = $vars['node']->body[$vars['node']->language][0]['value'];
+  $vars['is_closeable'] = user_alert_cookie_is_valid();
 }
-
