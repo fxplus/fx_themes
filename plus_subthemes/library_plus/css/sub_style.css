@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5 {
   font-style:normal;
   font-weight:normal;
 }
-
+.block-user-alert h2 {display:none;}
 div.user-alert {
   width: 100%;
   height: 100%;
