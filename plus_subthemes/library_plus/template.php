@@ -180,10 +180,12 @@ function plus_preprocess_block(&$variables) {
  */
 function library_plus_preprocess_user_alert(&$vars) {
   $node = $vars['node'];
-  $tag = taxonomy_term_load($node->field_tags['und'][0]['tid']);
-  $vars['importance'] = $tag ? $tag->name : 'alert';
+  // $tag = taxonomy_term_load($node->field_tags['und'][0]['tid']);
+  // $vars['importance'] = $tag ? $tag->name : 'alert';
+  $vars['importance'] = $node->field_importance['und'][0]['value'];
   $vars['alert_label'] = variable_get('user_alert_label', 'User Alert');
   $vars['nid'] = $vars['node']->nid;
-  $vars['body'] = $vars['node']->body[$vars['node']->language][0]['value'];
+  // $vars['body'] = $vars['node']->body[$vars['node']->language][0]['value'];
+  $vars['body'] = $vars['node']->field_message['und'][0]['value'];
   $vars['is_closeable'] = user_alert_cookie_is_valid();
 }
