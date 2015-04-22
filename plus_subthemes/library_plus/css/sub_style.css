@@ -20,9 +20,9 @@ div.user-alert {
   border-top: 1px solid #0f798c;
   border-bottom: 2px solid #cbe0ed;
 }
-div.user-alert.alert {  background: #e94e24; opacity: 0.8;}
-div.user-alert.warning {  background: #DF9A0C; opacity: 0.8;}
-div.user-alert.info {  background: #4D9FAE; opacity:0.6; /*background: #95a725; opacity: 0.8;*/ }
+div.user-alert.ua-alert {  background: #e94e24; opacity: 0.8;}
+div.user-alert.ua-warning {  background: #DF9A0C; opacity: 0.8;}
+div.user-alert.ua-info {  background: #4D9FAE; opacity:0.6; /*background: #95a725; opacity: 0.8;*/ }
 div.user-alert div.user-alert-message {
   width: 100%;
   overflow: visible;
