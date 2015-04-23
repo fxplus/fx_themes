@@ -16,7 +16,7 @@
 }
 
 
-#site-name a {
+#site-name a, #site-slogan {
 	font-family: "stag-book";
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
@@ -26,6 +26,10 @@
 	text-rendering: optimizeLegibility;
 	letter-spacing: 1px;
 	font-weight:normal;
+}
+
+#site-slogan {
+  color: #91dff6;
 }
 
 body {
@@ -52,18 +56,27 @@ p {
 
 
 blockquote {
-	font-family: source-sans-pro;
-	padding-left: 2em;
+	font-family: Roboto;
+  font-size: 15px;  
+	padding-left: 2em; 
 	border-left: solid #bbb;
 	line-height: 24px;
 	margin-bottom: 24px;
 	padding: 12px 2em;
 	background: #f0f0f0;
-	margin-top: 1px;
-	font-style: italic;
-	font-weight: 400;
+  margin-top: -18px;
+	/* font-style: italic; (interfered with use in referencing guide)*/
+	/* font-weight: 400;*/
+}
+blockquote p {
+    font-size: 15px;
+    margin-top: 6px;
+    margin-bottom: 12px;
 }
 
+div.field-body blockquote p {
+  font-family: 'Roboto Slab', serif;
+}
 
 h1 {
 	font-family: "stag-book";
@@ -84,7 +97,7 @@ h2 {
 	font-family: "stag-light";
 	color: rgba(137,137,137,1);
 	letter-spacing: 0px;
-	margin-top: 0px;
+	margin-top: 24px;
 	margin-bottom: 16px;
 	/* font-style: italic;
 	font-weight: 700; */
@@ -93,12 +106,15 @@ h2 {
 
 h3, h4 {
 	font-style: normal;
-	font-weight: 700;
-	font-family: "stag-medium";
+	font-weight: normal;
+	font-family: "stag-book";
 	font-size: 21px;
 	line-height: 30px;
 	color: rgba(137,137,137,1);
 	margin-bottom: 16px;
+}
+h3 a, h4 a {
+    color: #3C9AC9;
 }
 
 
@@ -118,7 +134,7 @@ h5 {
   font-style: normal;
   font-weight: normal;
   font-family: "Roboto";
-  font-size: 16px;
+  /*font-size: 16px; */
   line-height: 21px;
   color: #333;
   margin-bottom: 12px;

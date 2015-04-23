@@ -78,6 +78,9 @@
 </div>
 <!-- /#main-menu -->
 <?php endif; ?>
+<?php if ($page['main_upper']): ?>
+  <div id="main-upper" class="row-fluid main-upper"> <?php print render($page['main_upper']); ?> </div>
+<?php endif; ?>
 <div id="focus" class="clearfix" role="main">
   <div class="container">
     <?php if ($page['main_top']): ?>
@@ -90,9 +93,10 @@
     <?php if (!($is_front) && ($breadcrumb)): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
-    <?php if ($page['main_upper']): ?>
-    <div id="main-upper" class="row-fluid main-upper"> <?php print render($page['main_upper']); ?> </div>
+    <?php if ($messages): ?>
+      <div id="console" class="clearfix"><?php print $messages; ?></div>
     <?php endif; ?>
+    <!--main upper - previous position-->
     <div id="main-content" class="row main-content">
       <?php if ($page['sidebar_first']): ?>
       <div id="sidebar-first" class="sidebar span3 site-sidebar-first">
@@ -114,16 +118,15 @@
             <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
             <div class="tabs"> <?php print render($tabs); ?> </div>
             <?php endif; ?>
-            <?php if ($messages): ?>
-            <div id="console" class="clearfix"><?php print $messages; ?></div>
-            <?php endif; ?>
+            
             <?php if ($page['help']): ?>
             <div id="help" class="clearfix"> <?php print render($page['help']); ?> </div>
             <?php endif; ?>
             <?php if ($action_links): ?>
+            <!--
             <ul class="action-links">
               <?php print render($action_links); ?>
-            </ul>
+            </ul>-->
             <?php endif; ?>
           </div>
           <?php if ($page['content_top']): ?>
@@ -133,7 +136,7 @@
           <div id="content-upper" class="row-fluid content-upper"> <?php print render($page['content_upper']); ?> </div>
           <?php endif; ?>
           <?php if (($page['content']) || ($feed_icons)): ?>
-          <div id="content-body" class="row-fluid content-body"> <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
+          <div id="content-body" class="row-fluid content-body row"> <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
           <?php endif; ?>
           <?php if ($page['content_row2']): ?>
           <div id="content-row2" class="row-fluid content-row2"> <?php print render($page['content_row2']); ?> </div>

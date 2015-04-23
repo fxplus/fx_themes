@@ -1,0 +1,9 @@
+body.front .content-head {
+  display:none;
+}
+body.front #focus.main {
+  margin-bottom: none;
+}
+body.front #sidebar-first, body.front #content {
+  margin-top: 0;
+}

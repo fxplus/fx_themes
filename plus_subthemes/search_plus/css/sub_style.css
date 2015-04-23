@@ -1,0 +1,70 @@
+.views-exposed-form .views-exposed-widget .form-submit {
+/*  margin-top: 0;*/
+}
+#block-search-apex-search-form {
+  margin-bottom: 0;
+
+}
+
+div.view-filters {
+  float:right;
+  margin-top: -170px;
+  display:none;
+  margin-right: -20px;
+}
+div.view-filters label.option {
+  padding: 10px 20px 0 5px;
+}
+input[type="radio"], input[type="checkbox"] {
+  margin: 0;
+  margin-top: -1px;
+}
+
+body.admin-menu div.view-filters {
+  display: block;
+  opacity: 0.8;
+}
+.view-content {
+  margin-bottom:20px;
+}
+ul.pager {
+  float:left;
+}
+.item-list ul.pager li {
+  margin: 0;
+  padding-left:0;
+}
+ul.pager li>a{
+  border-radius: 5px;
+  width: 8em;
+}
+
+h2, h3, h4 {
+  font-weight: normal;
+  margin-top: 2em;
+}
+
+.view-content .service-provider {
+  background-repeat: no-repeat;
+  background-position: top left;
+  /*margin-left: -40px;*/
+  padding-left: 40px;
+}
+.view-content .service-provider h4 {
+  /*padding-left: 50px;*/
+}
+.view-content .provider-8 {
+  background-image: url(../images/service-icons/openbook.png);
+}
+.view-content .provider-7 {
+  background-image: url(../../ask_plus/images/icons/icon_73.png);
+  background-position: -10px 0;
+}
+.view-content .provider-9 {
+  background-image: url(../../dyslexia_plus/images/icons/icon_81.png);
+}
+
+
+media="all" @media (min-width: 1200px) [class*="span"] {
+  margin-left: 0;
+}

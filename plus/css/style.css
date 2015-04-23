@@ -19,6 +19,9 @@ body.front #block-menu-menu-new-students {
 #admin-shortcuts li {
   float: right;
 }
+.site-name a:hover {
+  color: #d7eefc;
+}
 /* ----- Search Box ------------------ */
 /* ----- Logo ------------------------ */
 /* ----- Site Title and Slogan ------- */
@@ -123,9 +126,13 @@ body.front #focus {
   margin: 0 0 12px 18px;
 }
 */
-#content .field-body img {
+
+#content .node img,
+#content .field-name-body img {
   float:right;
   margin: 0 0 12px 18px;
+  max-width:60%;
+  height:auto !important;
 }
 #content .pull-left img {
   float:left;
@@ -140,8 +147,8 @@ body.front #focus {
 
 /* CONTAINERS ***************************** */
 /* ----- Blocks ---------------------- */
-body.front #focus div #block-menu-menu-home-actions {
-  margin-top:   24px;
+body.front #focus .field-body h2 {
+  margin-top:  0;
 }
 #block-menu-menu-home-actions .btn {
  margin-bottom: 12px;
