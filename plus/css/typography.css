@@ -56,7 +56,7 @@ p {
 
 
 blockquote {
-	font-family: source-sans-pro;
+	font-family: Roboto;
   font-size: 15px;  
 	padding-left: 2em; 
 	border-left: solid #bbb;
@@ -70,10 +70,12 @@ blockquote {
 }
 blockquote p {
     font-size: 15px;
-    font-family: serif;
-    font-family: source-sans-pro;
     margin-top: 6px;
     margin-bottom: 12px;
+}
+
+div.field-body blockquote p {
+  font-family: 'Roboto Slab', serif;
 }
 
 h1 {
@@ -104,12 +106,15 @@ h2 {
 
 h3, h4 {
 	font-style: normal;
-	font-weight: 700;
-	font-family: "stag-medium";
+	font-weight: normal;
+	font-family: "stag-book";
 	font-size: 21px;
 	line-height: 30px;
 	color: rgba(137,137,137,1);
 	margin-bottom: 16px;
+}
+h3 a, h4 a {
+    color: #3C9AC9;
 }
 
 

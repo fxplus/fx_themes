@@ -17,6 +17,8 @@ stylesheets[all][] = css/of_override.css
 stylesheets[all][] = css/open_framework.css
 ; scripts[] = js/script.js
 scripts[] = js/css3-mediaqueries.js
+stylesheets[all][] = cookiebar/jquery.cookiebar.css
+scripts[] = cookiebar/jquery.cookiebar.js
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
 regions[header] = Header

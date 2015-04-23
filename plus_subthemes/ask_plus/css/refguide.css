@@ -1,0 +1,79 @@
+blockquote {
+  border-left: 4px solid #AEC741;
+}
+blockquote img + p {
+  clear:both;
+}
+blockquote p {
+  margin: 10px 0 20px 0;
+}
+
+.pullquote, .pullquote-large, blockquote > p, blockquote > p:first-child {
+  padding-left: 5px;
+  text-indent: -7px;
+}
+.tooltip .tooltip-inner {
+  padding-left: 15px;
+}
+
+.reftag {
+  color: #00699f;
+}
+
+.reference-auth,
+.reference-author,
+.reference-authors {
+  color: #9E2145;
+}
+.reference-date {
+  color: #166C66;
+}
+.reference-pub,
+.reference-publisher {
+  color: #751871;
+}
+.reference-publoc {
+  color: #4a0f48;
+}
+.reference-title, .reference-title:nth-child(odd) {
+  color: #73851C;
+}
+.reference-title:nth-child(even) {
+  color: #91A923;
+}
+.reference-other, .reference-other:nth-child(odd) {
+  color: #00699f;
+}
+.reference-other:nth-child(even) {
+  color: #004467;
+}
+
+
+/*blockquote:hover .reference- {
+  color: #569C20;
+}
+blockquote:hover .reference-author,
+blockquote:hover .reference-authors {
+  color: #9E2145;
+}
+blockquote:hover .reference-date {
+  color: #166C66;
+}
+blockquote:hover .reference-publisher {
+  color: #751871;
+}
+blockquote:hover .reference-title {
+  color: #91A923;
+}
+*/
+/*
+751871
+
+9E2145
+
+569C20
+
+91A923
+
+166C66
+*/

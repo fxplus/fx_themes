@@ -1,8 +1,11 @@
 body.front #focus {
   min-height:196px;
+  padding-bottom:30px;
 }
 .main .block { margin-bottom:0;}
-
+#block-fx-searchblock-form .links {
+  margin-top: 14px;
+}
 body.front .view-news-feed.view-display-id-page {
   /* margin-top: -60px; */
 }
@@ -14,10 +17,19 @@ body.front #content-body .slide-description {
 body.front #content-head {
   display:none;
 }
+
+body.front .block h2,
+body.front .block h3 {
+  margin-top: 0;
+}
 body.front #content-body .news-item {
   margin-bottom:32px;
 }
-
+body.front ul.menu.nav li {
+  list-style: none;
+  list-style-image: none;
+  margin-left: 0;
+}
 #block-views-library-tweets-block .item-list ul li {
   margin-bottom:24px;
 }
@@ -25,13 +37,13 @@ body.front #content-body .news-item {
   color: #666;
 }
 
-#block-views-news-feed-block,
+/*#block-views-news-feed-block,
 #block-views-library-tweets-block {
   margin-top: -24px;
-}
+}*/
 
 /* hide editing tabs etc associated with homepage node */
-body.front .content-body {display:none;}
+body.front .links.inline {display:none;}*/
 
 div.social-media h2 {
   margin-right: 8px;
@@ -41,14 +53,80 @@ div.social-media a {
   display:inline-block;
   width: 33px;
   height: 33px;
-  margin-top:22px;
+  /*margin-top:22px;*/
 }
 div.social-media {
   margin-bottom:12px;
 }
-.social-media a.twitter {background-position: 101px 50px; opacity:.6;}
+/*.social-media a.twitter {background-position: 101px 50px; opacity:0.8;}
 .social-media a.twitter:hover {background-position: 101px 0px; opacity:1;}
-.social-media a.facebook {background-position: 1px 50px; opacity:.4;}
+.social-media a.facebook {background-position: 1px 50px; opacity:0.8;}
 .social-media a.facebook:hover {background-position: 1px 0px; opacity:1;}
-.social-media a.pinterest {background-position: 51px 50px; opacity:.4;}
+.social-media a.pinterest {background-position: 51px 50px; opacity:0.8;}
+.social-media a.pinterest:hover {background-position: 51px 0px; opacity:1;}*/
+.social-media a.twitter {background-position: 101px 0px; opacity:0.5;}
+.social-media a.twitter:hover {background-position: 101px 0px; opacity:1;}
+.social-media a.facebook {background-position: 1px 0px; opacity:0.5;}
+.social-media a.facebook:hover {background-position: 1px 0px; opacity:1;}
+.social-media a.pinterest {background-position: 51px 0px; opacity:0.5;}
 .social-media a.pinterest:hover {background-position: 51px 0px; opacity:1;}
+
+/* CSS only tooltips cheerfully stolen from http://cbracco.me/a-simple-css-tooltip/ */
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius:    3px;
+  border-radius:         3px;
+  background-color: #008da8;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}

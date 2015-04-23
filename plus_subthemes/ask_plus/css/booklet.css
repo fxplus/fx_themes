@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'stag-medium';
+  src: url('http://ask.fxplus.ac.uk/sites/all/themes/custom/fx_themes/plus/fonts/stag/Stag-Medium.otf');
+}
+body {
+  padding:0;
+}
+h1 {
+  font-size: 18pt;
+  letter-spacing: 0;
+}
+h2 {
+  font-size: 16pt;
+}
+h3 {
+  font-size: 14pt;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: 'stag-medium';
+  font-weight: normal;
+}
+h4, h5, h6 {
+  font-size: 12pt;
+  font-weight: bold;
+}
+p, ul li, .field-body div {
+  font-size: 11pt;
+  line-height: 1.5;
+  font-family: verdana;
+}
+a {
+  color: black;
+  text-decoration: none;
+  border: none;
+}
+blockquote {
+  margin: 0;
+  padding: 8px 0 10px 2em;
+/*  border-top: 1px dotted #666;
+  border-bottom: 1px dotted #666;*/
+  background-color: #ddd;
+}
+blockquote p, blockquote div {
+  font-size: 12pt;
+}
+.section-2, .section-3 {
+  margin-bottom: 2em;
+}
+.node .content .field-body {
+  margin-bottom: 2em;
+}
+.node .content .field-body p {
+    color: black;
+}
+.node .content .field-body li {
+  margin:0;
+}
+.node .content .field-body a {
+  color: #444;
+  text-decoration: none;
+}
+
+@page { margin: 8mm;}
+blockquote {
+  /* padding: .5em; */
+  page-break-inside: avoid;
+}
+

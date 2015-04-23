@@ -29,6 +29,12 @@
 #main-menu .navbar .nav>.active>a {
   color: #fff;
 }
+#main {
+  background-color: white;
+}
+#site-slogan a {
+  color: #91dff6;
+}
 
 @media (max-width: 767px) {
   #header {

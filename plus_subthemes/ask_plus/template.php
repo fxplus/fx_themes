@@ -17,6 +17,17 @@ function ask_plus_process_page(&$variables) {
         $variables['title'] = NULL;
       }
     }
+    // swap titles around for languages book (effectively a subsection of site)
+    if ($variables['node']->book['menu_name'] == 'book-toc-15') {
+      $variables['site_slogan'] = $variables['site_name'];
+      $variables['site_name'] = "English Language Courses";
+    }
+    // if ($variables['node']->book['menu_name'] == 'book-toc-74') {
+    // }
+
+    if (is_array($variables['node']->book) && $variables['node']->book['plid'] == 1188) {
+      drupal_add_css(drupal_get_path('theme', 'ask_plus') . "/css/refguide.css", array('group' => CSS_THEME, 'weight' => 10));
+    }
   }
 }
 
@@ -66,4 +77,23 @@ function _ask_plus_button_attributes($menu_link = FALSE) {
     }
   }
   return $attributes;
+}
+
+function ask_plus_item_list($variables) {
+  return 'test';
+}
+// called from template (should probably be theme function)
+// sets headings in node body to appropriate level according to book depth
+function _ask_plus_set_hdepth($depth) {
+ $hdepth = ($depth > 1)? $depth - 1: $depth;
+ $hdepth = ($hdepth > 5)? 5: $hdepth;
+ return $hdepth;
+}
+// uses regex to set heading tags down to match context in book eg h4 within h3
+function _ask_plus_header_depth_context($content, $hdepth = 1) {
+    $content = preg_replace_callback('#</?h([1-6])>#si', 
+      function($matches) use ($hdepth) {
+        return str_replace($matches[1], $matches[1] + $hdepth-1, $matches[0]);
+        }, $content);
+  return $content;
 }

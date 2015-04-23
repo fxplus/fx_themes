@@ -19,6 +19,9 @@ body.front #block-menu-menu-new-students {
 #admin-shortcuts li {
   float: right;
 }
+.site-name a:hover {
+  color: #d7eefc;
+}
 /* ----- Search Box ------------------ */
 /* ----- Logo ------------------------ */
 /* ----- Site Title and Slogan ------- */
