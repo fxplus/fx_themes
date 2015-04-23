@@ -37,10 +37,10 @@ body.front ul.menu.nav li {
   color: #666;
 }
 
-#block-views-news-feed-block,
+/*#block-views-news-feed-block,
 #block-views-library-tweets-block {
   margin-top: -24px;
-}
+}*/
 
 /* hide editing tabs etc associated with homepage node */
 body.front .links.inline {display:none;}*/
